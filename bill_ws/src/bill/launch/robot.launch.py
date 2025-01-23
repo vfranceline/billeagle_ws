@@ -26,7 +26,7 @@ def generate_launch_description():
     # Launch Arguments        
     declare_rviz = DeclareLaunchArgument(
         name='rviz', default_value='True',
-        description='Opens rviz is set to True')
+        description='Opens rviz if set to True')
     
     declare_slam = DeclareLaunchArgument(
         name='slam', default_value='True',
@@ -111,6 +111,15 @@ def generate_launch_description():
         parameters=[os.path.join(get_package_share_directory('bill'), 'config', 'ekf.yaml')],
     )
 
+    # Launch mecanum_drive_controller
+    mecanum_drive_controller = Node(
+        package='controller_manager',
+        executable='spawner',
+        name='mecanum_drive_controller',
+        arguments=['mecanum_drive_controller'],
+        output='screen'
+    )
+
     # Launch them all!
     return LaunchDescription([
         # Declare launch arguments
@@ -123,8 +132,9 @@ def generate_launch_description():
         rsp,
         static_tf_odom,
         tf2_node,
-        robot_localization,
+        # robot_localization,  # o micro ros tá fazendo isso?
         twist_mux,
-        # slam_node,
-        # nav_node
+        slam_node,
+        nav_node,
+        mecanum_drive_controller  # Adicionando o controlador aqui
     ])

@@ -58,3 +58,16 @@ ekf_filter_node:
         #         roll_vel, pitch_vel, yaw_vel,
         #         x_accel , y_accel  , z_accel]
 
+        odom0_differential: false
+        odom0_queue_size: 10
+        odom0_relative: false
+
+        process_noise_covariance:
+        [0.1, 0,   0,
+        0,   0.1, 0,
+        0,   0,   0.1]
+
+        measurement_noise_covariance:
+        [0.2, 0,   0,
+        0,   0.2, 0,
+        0,   0,   0.2]
