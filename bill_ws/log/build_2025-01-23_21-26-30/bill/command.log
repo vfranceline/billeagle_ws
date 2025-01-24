@@ -1,6 +1,0 @@
-Invoking command in '/home/vfran/billeagle_ws/bill_ws/build/bill': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/vfran/billeagle_ws/bill_ws/src/bill -DCMAKE_INSTALL_PREFIX=/home/vfran/billeagle_ws/bill_ws/install/bill
-Invoked command in '/home/vfran/billeagle_ws/bill_ws/build/bill' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake /home/vfran/billeagle_ws/bill_ws/src/bill -DCMAKE_INSTALL_PREFIX=/home/vfran/billeagle_ws/bill_ws/install/bill
-Invoking command in '/home/vfran/billeagle_ws/bill_ws/build/bill': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/bill_ws/build/bill -- -j16 -l16
-Invoked command in '/home/vfran/billeagle_ws/bill_ws/build/bill' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/bill_ws/build/bill -- -j16 -l16
-Invoking command in '/home/vfran/billeagle_ws/bill_ws/build/bill': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/bill_ws/build/bill
-Invoked command in '/home/vfran/billeagle_ws/bill_ws/build/bill' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/bill_ws/build/bill
