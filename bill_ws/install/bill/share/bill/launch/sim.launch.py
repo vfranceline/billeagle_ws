@@ -1,13 +1,11 @@
 import os
 from launch_ros.actions import Node
-from launch_ros.actions import LifecycleNode
 from launch import LaunchDescription
 from launch.conditions import IfCondition
 from ament_index_python.packages import get_package_share_directory
 from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
-import launch_ros.actions
 
 
 def generate_launch_description():
@@ -15,18 +13,31 @@ def generate_launch_description():
     # Package name
     package_name='bill' 
 
-    # Set use_sim_time to false
-    use_sim_time = 'false'
+    # Set use_sim_time to true
+    use_sim_time = 'true'
 
     # Launch configurations
+    world = LaunchConfiguration('world')
+    headless = LaunchConfiguration('headless')
     rviz = LaunchConfiguration('rviz')
     slam = LaunchConfiguration('slam')
-    nav = LaunchConfiguration('nav') 
+    nav = LaunchConfiguration('nav')
 
-    # Launch Arguments        
+    # Path to default world 
+    world_path = os.path.join(get_package_share_directory(package_name),'worlds', 'test.world')
+
+    # Launch Arguments    
+    declare_world = DeclareLaunchArgument(
+        name='world', default_value=world_path,
+        description='Full path to the world model file to load')
+    
+    declare_headless = DeclareLaunchArgument(
+        'headless', default_value='False',
+        description='Decides if the simulation is visualized')
+    
     declare_rviz = DeclareLaunchArgument(
         name='rviz', default_value='True',
-        description='Opens rviz if set to True')
+        description='Opens rviz is set to True')
     
     declare_slam = DeclareLaunchArgument(
         name='slam', default_value='True',
@@ -49,10 +60,36 @@ def generate_launch_description():
     twist_mux = Node(
             package="twist_mux",
             executable="twist_mux",
-            parameters=[twist_mux_params, {'use_sim_time': False}],
+            parameters=[twist_mux_params, {'use_sim_time': True}],
             remappings=[('/cmd_vel_out','/cmd_vel')]
     )
- 
+
+    # Launch the gazebo server to initialize the simulation
+    gazebo_params_file = os.path.join(get_package_share_directory(package_name),'config','gazebo_params.yaml')
+    gazebo_server = IncludeLaunchDescription(
+                    PythonLaunchDescriptionSource([os.path.join(
+                        get_package_share_directory('gazebo_ros'), 'launch', 'gzserver.launch.py'
+                    )]), launch_arguments={'extra_gazebo_args': '--ros-args --params-file ' + gazebo_params_file, 'world': world}.items()
+    )
+
+    # Launch the gazebo client to visualize the simulation only if headless is declared as False
+    gazebo_client = GroupAction(
+        condition=IfCondition(PythonExpression(['not ', headless])),
+        actions=[IncludeLaunchDescription(
+                    PythonLaunchDescriptionSource([os.path.join(
+                        get_package_share_directory('gazebo_ros'), 'launch', 'gzclient.launch.py')])
+                    )]
+    )
+
+    # Run the spawner node from the gazebo_ros package. 
+    spawn_diff_bot = Node(
+                        package='gazebo_ros', 
+                        executable='spawn_entity.py',
+                        arguments=['-topic', 'robot_description',
+                                   '-entity', 'diff_bot'],
+                        output='screen'
+    )
+    
     # Launch Rviz with diff bot rviz file
     rviz_config_file = os.path.join(get_package_share_directory(package_name), 'rviz', 'bot.rviz')
     rviz2 = GroupAction(
@@ -89,76 +126,22 @@ def generate_launch_description():
                     )]), launch_arguments={'use_sim_time': use_sim_time, 'params_file': nav_params}.items())]
     )
 
-    static_tf_odom = launch_ros.actions.Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_transform_publisher',
-        output='screen',
-        arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'odom'],
-    )
-
-    tf2_node = Node(package='tf2_ros',
-                    executable='static_transform_publisher',
-                    name='static_tf_pub_laser',
-                    arguments=['0', '0', '0.02','0', '0', '0', '1','base_link','laser_link'],
-    )
-
-    robot_localization = launch_ros.actions.Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_filter_node',
-        output='screen',
-        parameters=[os.path.join(get_package_share_directory('bill'), 'config', 'ekf.yaml')],
-    )
-
-    joint_state_publisher = Node(
-        package="joint_state_publisher",
-        executable="joint_state_publisher",
-        name="joint_state_publisher",
-        parameters=[{'use_gui': False}],
-        output="screen",
-    )
-
-    # Launch mecanum_drive_controller
-    mecanum_drive_controller = Node(
-        package='controller_manager',
-        executable='spawner',
-        name='mecanum_drive_controller',
-        arguments=['mecanum_drive_controller'],
-        output='screen'
-    )
-
-    controller_manager = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'diff_drive_controller.yaml')],
-        output="screen",
-    )
-
-    load_diff_drive_controller = Node(
-        package="controller_manager",
-        executable="spawner",
-        arguments=["diff_drive_controller"],
-    )
-
     # Launch them all!
     return LaunchDescription([
         # Declare launch arguments
+        declare_headless,
         declare_rviz,
+        declare_world,
         declare_slam,
         declare_nav,
 
         # Launch the nodes
         rviz2,
         rsp,
-        joint_state_publisher,
-        static_tf_odom,
-        tf2_node,
-        # robot_localization,  # o micro ros tá fazendo isso?
         twist_mux,
-        # mecanum_drive_controller,  # Adicionando o controlador aqui
-        controller_manager,
-        load_diff_drive_controller
-        # slam_node,
-        # nav_node,
+        gazebo_server,
+        gazebo_client,
+        spawn_diff_bot,
+        slam_node,
+        nav_node,
     ])

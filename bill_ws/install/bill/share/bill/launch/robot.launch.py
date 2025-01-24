@@ -151,14 +151,14 @@ def generate_launch_description():
         # Launch the nodes
         rviz2,
         rsp,
-        joint_state_publisher,
         static_tf_odom,
         tf2_node,
         # robot_localization,  # o micro ros tá fazendo isso?
         twist_mux,
-        # mecanum_drive_controller,  # Adicionando o controlador aqui
-        controller_manager,
-        load_diff_drive_controller
-        # slam_node,
-        # nav_node,
+        slam_node,
+        nav_node,
+        mecanum_drive_controller,  # Adicionando o controlador aqui
+        # controller_manager,
+        # load_diff_drive_controller,
+        joint_state_publisher
     ])
