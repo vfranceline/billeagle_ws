@@ -1,0 +1,44 @@
+[0.918s] Invoking command in '/home/vfran/billeagle_ws/nav_ws/src/task_nav': PYTHONPATH=/home/vfran/billeagle_ws/nav_ws/build/task_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_nav build --build-base /home/vfran/billeagle_ws/nav_ws/build/task_nav/build install --record /home/vfran/billeagle_ws/nav_ws/build/task_nav/install.log --single-version-externally-managed install_data
+[1.235s] running egg_info
+[1.236s] writing ../../build/task_nav/task_nav.egg-info/PKG-INFO
+[1.236s] writing dependency_links to ../../build/task_nav/task_nav.egg-info/dependency_links.txt
+[1.236s] writing entry points to ../../build/task_nav/task_nav.egg-info/entry_points.txt
+[1.236s] writing requirements to ../../build/task_nav/task_nav.egg-info/requires.txt
+[1.236s] writing top-level names to ../../build/task_nav/task_nav.egg-info/top_level.txt
+[1.239s] reading manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+[1.240s] writing manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+[1.240s] running build
+[1.240s] running build_py
+[1.241s] copying task_nav/goal_pose.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] copying task_nav/__init__.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] copying task_nav/inspection.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] copying task_nav/object_avoidance.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] copying task_nav/init_pose.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] copying task_nav/mecanum_drive.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[1.241s] running install
+[1.242s] running install_lib
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/goal_pose.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/__init__.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/inspection.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/object_avoidance.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/init_pose.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.243s] copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/mecanum_drive.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[1.244s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/goal_pose.py to goal_pose.cpython-310.pyc
+[1.245s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/__init__.py to __init__.cpython-310.pyc
+[1.245s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/inspection.py to inspection.cpython-310.pyc
+[1.246s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/object_avoidance.py to object_avoidance.cpython-310.pyc
+[1.247s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/init_pose.py to init_pose.cpython-310.pyc
+[1.247s] byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/mecanum_drive.py to mecanum_drive.cpython-310.pyc
+[1.248s] running install_data
+[1.249s] copying package.xml -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/share/task_nav
+[1.249s] running install_egg_info
+[1.251s] removing '/home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav-0.0.0-py3.10.egg-info' (and everything under it)
+[1.252s] Copying ../../build/task_nav/task_nav.egg-info to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav-0.0.0-py3.10.egg-info
+[1.253s] running install_scripts
+[1.281s] Installing goal_pose script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[1.281s] Installing init_pose script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[1.281s] Installing inspection_routine script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[1.281s] Installing mecanum_drive script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[1.282s] Installing object_avoidance script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[1.282s] writing list of installed files to '/home/vfran/billeagle_ws/nav_ws/build/task_nav/install.log'
+[1.336s] Invoked command in '/home/vfran/billeagle_ws/nav_ws/src/task_nav' returned '0': PYTHONPATH=/home/vfran/billeagle_ws/nav_ws/build/task_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_nav build --build-base /home/vfran/billeagle_ws/nav_ws/build/task_nav/build install --record /home/vfran/billeagle_ws/nav_ws/build/task_nav/install.log --single-version-externally-managed install_data
