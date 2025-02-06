@@ -24,7 +24,10 @@ setup(
             'goal_pose = task_nav.goal_pose:main',
             'mecanum_drive = task_nav.mecanum_drive:main',
             'inspection_routine = task_nav.inspection:main',
-            'object_avoidance = task_nav.object_avoidance:main'
+            'object_avoidance = task_nav.object_avoidance:main',
+            'turn_around = task_nav.turn_around:main',
+            'pub_turned = task_nav.pub_turn_around:main',
+            'fake_node = task_nav.fake_node:main'
         ],
     },
 )

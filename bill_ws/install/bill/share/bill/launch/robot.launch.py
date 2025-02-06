@@ -155,11 +155,11 @@ def generate_launch_description():
         joint_state_publisher,
         # static_tf_odom,
         # tf2_node,
-        robot_localization,  # o micro ros tá fazendo isso?
+        robot_localization,  
         twist_mux,
-        mecanum_drive_controller,  # Adicionando o controlador aqui
-        # controller_manager,
-        # load_diff_drive_controller
+        # mecanum_drive_controller,  # Adicionando o controlador aqui
+        controller_manager,
+        load_diff_drive_controller
         # slam_node,
         # nav_node,
     ])

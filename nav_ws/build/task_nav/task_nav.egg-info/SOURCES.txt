@@ -10,11 +10,14 @@ setup.py
 ../../build/task_nav/task_nav.egg-info/zip-safe
 resource/task_nav
 task_nav/__init__.py
+task_nav/fake_node.py
 task_nav/goal_pose.py
 task_nav/init_pose.py
 task_nav/inspection.py
 task_nav/mecanum_drive.py
 task_nav/object_avoidance.py
+task_nav/pub_turn_around.py
+task_nav/turn_around.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

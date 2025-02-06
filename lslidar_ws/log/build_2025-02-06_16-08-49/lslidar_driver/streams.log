@@ -1,0 +1,175 @@
+[0.011s] Invoking command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake /home/vfran/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver
+[0.067s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.132s] -- Detecting C compiler ABI info
+[0.193s] -- Detecting C compiler ABI info - done
+[0.200s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.201s] -- Detecting C compile features - done
+[0.203s] -- Detecting CXX compiler ABI info
+[0.275s] -- Detecting CXX compiler ABI info - done
+[0.282s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.282s] -- Detecting CXX compile features
+[0.283s] -- Detecting CXX compile features - done
+[0.446s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[0.450s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.553s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.695s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.701s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.710s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.723s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.740s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.797s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.801s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.922s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.954s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.002s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.014s] -- Found Threads: TRUE  
+[1.084s] -- Checking for module 'eigen3'
+[1.104s] --   Found eigen3, version 3.4.0
+[1.154s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[1.154s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.185s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.205s] -- Checking for module 'flann'
+[1.225s] --   Found flann, version 1.9.1
+[1.279s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.279s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.316s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[1.323s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[1.500s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[1.500s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[1.503s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[1.512s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[1.528s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[1.555s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.662s] -- Found X11: /usr/include   
+[1.662s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.731s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.731s] -- Looking for gethostbyname
+[1.792s] -- Looking for gethostbyname - found
+[1.792s] -- Looking for connect
+[1.851s] -- Looking for connect - found
+[1.851s] -- Looking for remove
+[1.912s] -- Looking for remove - found
+[1.912s] -- Looking for shmat
+[1.972s] -- Looking for shmat - found
+[1.972s] -- Looking for IceConnectionNumber in ICE
+[2.036s] -- Looking for IceConnectionNumber in ICE - found
+[2.139s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[2.140s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[2.143s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[2.145s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[2.193s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[2.199s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[2.203s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[2.209s] -- Found utf8cpp: /usr/include/utf8cpp  
+[2.315s] -- Checking for module 'libusb-1.0'
+[2.337s] --   Found libusb-1.0, version 1.0.25
+[2.389s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[2.390s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[2.390s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.474s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[2.474s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.474s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[2.621s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[2.628s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[2.634s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[2.781s] -- Found Qhull version 8.0.2
+[2.926s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[3.062s] -- looking for PCL_COMMON
+[3.063s] -- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  
+[3.063s] -- looking for PCL_KDTREE
+[3.064s] -- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  
+[3.064s] -- looking for PCL_OCTREE
+[3.070s] -- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  
+[3.070s] -- looking for PCL_SEARCH
+[3.071s] -- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  
+[3.071s] -- looking for PCL_SAMPLE_CONSENSUS
+[3.071s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  
+[3.071s] -- looking for PCL_FILTERS
+[3.072s] -- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  
+[3.072s] -- looking for PCL_2D
+[3.073s] -- Found PCL_2D: /usr/include/pcl-1.12  
+[3.073s] -- looking for PCL_GEOMETRY
+[3.073s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.12  
+[3.073s] -- looking for PCL_IO
+[3.074s] -- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  
+[3.074s] -- looking for PCL_FEATURES
+[3.075s] -- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  
+[3.075s] -- looking for PCL_ML
+[3.076s] -- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  
+[3.076s] -- looking for PCL_SEGMENTATION
+[3.076s] -- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  
+[3.077s] -- looking for PCL_VISUALIZATION
+[3.077s] -- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  
+[3.078s] -- looking for PCL_SURFACE
+[3.078s] -- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  
+[3.078s] -- looking for PCL_REGISTRATION
+[3.079s] -- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  
+[3.079s] -- looking for PCL_KEYPOINTS
+[3.080s] -- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  
+[3.080s] -- looking for PCL_TRACKING
+[3.081s] -- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  
+[3.081s] -- looking for PCL_RECOGNITION
+[3.082s] -- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  
+[3.082s] -- looking for PCL_STEREO
+[3.083s] -- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  
+[3.083s] -- looking for PCL_APPS
+[3.083s] -- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  
+[3.084s] -- looking for PCL_IN_HAND_SCANNER
+[3.084s] -- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  
+[3.084s] -- looking for PCL_MODELER
+[3.084s] -- Found PCL_MODELER: /usr/include/pcl-1.12  
+[3.084s] -- looking for PCL_POINT_CLOUD_EDITOR
+[3.085s] -- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  
+[3.085s] -- looking for PCL_OUTOFCORE
+[3.086s] -- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  
+[3.086s] -- looking for PCL_PEOPLE
+[3.087s] -- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  
+[3.088s] -- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+[3.091s] -- Found diagnostic_updater: 4.0.0 (/opt/ros/humble/share/diagnostic_updater/cmake)
+[3.116s] -- Found lslidar_msgs: 1.2.0 (/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake)
+[3.131s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[3.166s] -- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)
+[3.291s] -- Configuring done
+[3.406s] -- Generating done
+[3.419s] -- Build files have been written to: /home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver
+[3.437s] Invoked command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake /home/vfran/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver
+[3.439s] Invoking command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver -- -j16 -l16
+[3.475s] [ 60%] [32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver.cc.o[0m
+[3.475s] [ 60%] [32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/input.cc.o[0m
+[3.475s] [ 60%] [32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver_node.cc.o[0m
+[3.476s] [ 80%] [32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lsiosr.cpp.o[0m
+[16.503s] [100%] [32m[1mLinking CXX executable lslidar_driver_node[0m
+[18.778s] [100%] Built target lslidar_driver_node
+[18.785s] Invoked command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver -- -j16 -l16
+[18.787s] Invoking command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver
+[18.791s] -- Install configuration: ""
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/launch
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_launch.py
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10.yaml
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml
+[18.792s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/rviz
+[18.793s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz
+[18.793s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node
+[18.798s] -- Set runtime path of "/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node" to ""
+[18.798s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver
+[18.798s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/path.sh
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/path.dsv
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.bash
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.sh
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.zsh
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.dsv
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/package.dsv
+[18.799s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver
+[18.800s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.800s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.800s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake
+[18.800s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake
+[18.800s] -- Installing: /home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/package.xml
+[18.802s] Invoked command in '/home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver' returned '0': CMAKE_PREFIX_PATH=/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_msgs:/home/vfran/billeagle_ws/lslidar_ws/install/lslidar_driver:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_setup:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_agent:/home/vfran/billeagle_ws/microros_ws/install/micro_ros_msgs:/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/lslidar_ws/build/lslidar_driver

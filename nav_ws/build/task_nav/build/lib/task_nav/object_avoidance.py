@@ -8,6 +8,7 @@ from geometry_msgs.msg import Twist
 class ObjectAvoidanceNode(Node):
     def __init__(self):
         super().__init__('object_avoidance_node')
+        
         self.subscription = self.create_subscription(
             LaserScan,
             'scan',

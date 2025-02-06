@@ -8,11 +8,13 @@ from geometry_msgs.msg import Twist
 class ObjectAvoidanceNode(Node):
     def __init__(self):
         super().__init__('object_avoidance_node')
+        
         self.subscription = self.create_subscription(
             LaserScan,
             'scan',
             self.lidar_callback,
             10)
+        
         self.publisher = self.create_publisher(Twist, 'cmd_vel', 10)
         self.safe_distance = 0.5  # Meters
         self.get_logger().info('Object Avoidance Node Started')
@@ -26,7 +28,6 @@ class ObjectAvoidanceNode(Node):
         if min_distance < self.safe_distance:
             # Obstacle detected, stop the robot
             twist_msg.linear.x = 0.0
-            # twist_msg.angular.z = 0.0  # Rotate counter-clockwise
         else:
             # No obstacle detected, move forward
             twist_msg.linear.x = 0.2

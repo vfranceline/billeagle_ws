@@ -1,0 +1,20 @@
+teleop_twist_joy_node:
+  ros__parameters:
+    axis_linear:
+      x: 1 # "x"  Left thumb stick vertical (joystick esquerdo vertical) - Frente
+      y: 3 
+    scale_linear:
+      x: 1.0
+      y: 1.0
+
+    axis_angular:
+      yaw: 0 # "z" Left thumb stick horizontal (joystick esquerdo horizontal) - Lados
+      #pitch: 4 # não utilizado
+    scale_angular:
+      yaw: 1.0
+      # pitch: 1.0 # não utilizado
+
+    enable_button: 5 # Right trigger button 
+    require_enable_button: false # botão de interlock desligado
+    
+
