@@ -94,7 +94,7 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_transform_publisher',
         output='screen',
-        arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'odom'],
+        arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'odometry'],
     )
 
     tf2_node = Node(package='tf2_ros',

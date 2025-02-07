@@ -9,4 +9,4 @@ mecanum_drive_controller:
   wheel_radius: 0.07
   publish_rate: 50
   command_timeout: 0.5
-  odom_frame: "odom"
+  odom_frame: "odometry"
