@@ -70,9 +70,9 @@ ekf_filter_node:
 #     3b. MAKE SURE something else is generating the odom->base_link transform. Note that this can even be another state
 #         estimation node from robot_localization! However, that instance should not fuse the global data.
         map_frame: map                   # Defaults to "map" if unspecified
-        odom_frame: odometry                # Defaults to "odom" if unspecified
+        odom_frame: odom                # Defaults to "odom" if unspecified
         base_link_frame: base_link  # Defaults to "base_link" if unspecified
-        world_frame: odometry            # Defaults to the value of odom_frame if unspecified
+        world_frame: odom            # Defaults to the value of odom_frame if unspecified
 
 # The filter accepts an arbitrary number of inputs from each input message type (nav_msgs/Odometry,
 # geometry_msgs/PoseWithCovarianceStamped, geometry_msgs/TwistWithCovarianceStamped,
@@ -140,30 +140,30 @@ ekf_filter_node:
         odom0_pose_rejection_threshold: 5.0
         odom0_twist_rejection_threshold: 1.0
 
-        imu0: imu/data
-        imu0_config: [false, false, false,
-                      true,  true,  true,
-                      false, false, false,
-                      true,  true,  true,
-                      true,  true,  true]
+#         imu0: imu/data
+#         imu0_config: [false, false, false,
+#                       true,  true,  true,
+#                       false, false, false,
+#                       true,  true,  true,
+#                       true,  true,  true]
 
-        #        [x_pos   , y_pos    , z_pos,
-        #         roll    , pitch    , yaw,
-        #         x_vel   , y_vel    , z_vel,
-        #         roll_vel, pitch_vel, yaw_vel,
-        #         x_accel , y_accel  , z_accel]
+#         #        [x_pos   , y_pos    , z_pos,
+#         #         roll    , pitch    , yaw,
+#         #         x_vel   , y_vel    , z_vel,
+#         #         roll_vel, pitch_vel, yaw_vel,
+#         #         x_accel , y_accel  , z_accel]
         
-        imu0_nodelay: false
-        imu0_differential: false
-        imu0_relative: true
-        imu0_queue_size: 7
-        imu0_pose_rejection_threshold: 0.8                 # Note the difference in parameter names
-        imu0_twist_rejection_threshold: 0.8                #
-        imu0_linear_acceleration_rejection_threshold: 0.8  #
+#         imu0_nodelay: false
+#         imu0_differential: false
+#         imu0_relative: true
+#         imu0_queue_size: 7
+#         imu0_pose_rejection_threshold: 0.8                 # Note the difference in parameter names
+#         imu0_twist_rejection_threshold: 0.8                #
+#         imu0_linear_acceleration_rejection_threshold: 0.8  #
 
-# [ADVANCED] Some IMUs automatically remove acceleration due to gravity, and others don't. If yours doesn't, please set
-# this to true, and make sure your data conforms to REP-103, specifically, that the data is in ENU frame.
-        imu0_remove_gravitational_acceleration: true
+# # [ADVANCED] Some IMUs automatically remove acceleration due to gravity, and others don't. If yours doesn't, please set
+# # this to true, and make sure your data conforms to REP-103, specifically, that the data is in ENU frame.
+#         imu0_remove_gravitational_acceleration: true
 
 # [ADVANCED]  The EKF and UKF models follow a standard predict/correct cycle. During prediction, if there is no
 # acceleration reference, the velocity at time t+1 is simply predicted to be the same as the velocity at time t. During

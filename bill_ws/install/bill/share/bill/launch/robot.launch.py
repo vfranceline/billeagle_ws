@@ -94,7 +94,7 @@ def generate_launch_description():
         executable='static_transform_publisher',
         name='static_transform_publisher',
         output='screen',
-        arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'odometry'],
+        arguments=['0.0', '0.0', '0.0', '0', '0', '0', 'base_link', 'odom'],
     )
 
     tf2_node = Node(package='tf2_ros',
@@ -154,7 +154,7 @@ def generate_launch_description():
         rsp,
         joint_state_publisher,
         # static_tf_odom,
-        # tf2_node,
+        tf2_node,
         robot_localization,  
         twist_mux,
         # mecanum_drive_controller,  # Adicionando o controlador aqui

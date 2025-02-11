@@ -1,0 +1,47 @@
+[0.014s] Invoking command in '/home/vfran/billeagle_ws/bill_ws/build/bill': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/bill_ws/build/bill -- -j16 -l16
+[0.035s] Invoked command in '/home/vfran/billeagle_ws/bill_ws/build/bill' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/vfran/billeagle_ws/bill_ws/build/bill -- -j16 -l16
+[0.041s] Invoking command in '/home/vfran/billeagle_ws/bill_ws/build/bill': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/bill_ws/build/bill
+[0.045s] -- Install configuration: ""
+[0.045s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config
+[0.045s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/diff_drive_controller.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/twist_mux_params.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/gazebo_params.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/nav_params.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/slam_params.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/mecanum_drive_params.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/ekf.yaml
+[0.046s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/common.xacro
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/gazebo_control.xacro
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/ros2_control.xacro
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/robot.urdf.xacro
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/lidar.xacro
+[0.047s] -- Installing: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/robot_core.xacro
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/robot.launch.py
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/sim.launch.py
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/rsp.launch.py
+[0.047s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/slam.launch.py
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/nav.launch.py
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/lidar.launch.py
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/worlds
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/worlds/test.world
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/worlds/empty.world
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/rviz
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/rviz/bot.rviz
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/ament_index/resource_index/package_run_dependencies/bill
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/ament_index/resource_index/parent_prefix_path/bill
+[0.048s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/environment/ament_prefix_path.sh
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/environment/ament_prefix_path.dsv
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/environment/path.sh
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/environment/path.dsv
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/local_setup.bash
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/local_setup.sh
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/local_setup.zsh
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/local_setup.dsv
+[0.049s] -- Installing: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/package.dsv
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/ament_index/resource_index/packages/bill
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/cmake/billConfig.cmake
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/cmake/billConfig-version.cmake
+[0.049s] -- Up-to-date: /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/package.xml
+[0.049s] Invoked command in '/home/vfran/billeagle_ws/bill_ws/build/bill' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/vfran/billeagle_ws/bill_ws/build/bill
