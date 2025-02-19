@@ -8,6 +8,7 @@ from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
 import launch_ros.actions
+import launch.actions
 
 
 def generate_launch_description():
@@ -108,6 +109,7 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
+        remappings=[('odometry/filtered', 'odom')],
         parameters=[os.path.join(get_package_share_directory('bill'), 'config', 'ekf.yaml')],
     )
 
@@ -131,16 +133,19 @@ def generate_launch_description():
     controller_manager = Node(
         package="controller_manager",
         executable="ros2_control_node",
-        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'diff_drive_controller.yaml')],
+        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'mecanum_drive_controller.yaml')],
         output="screen",
     )
 
-    load_diff_drive_controller = Node(
+    load_diff_drive_controller = launch.actions.TimerAction(
+    period=3.0,  # Espera 3 segundos antes de rodar o spawner
+    actions=[Node(
         package="controller_manager",
         executable="spawner",
         arguments=["diff_drive_controller"],
         output="screen",
-    )
+    )]
+)
 
     # Launch them all!
     return LaunchDescription([
@@ -157,9 +162,9 @@ def generate_launch_description():
         tf2_node,
         robot_localization,  
         twist_mux,
-        # mecanum_drive_controller,  # Adicionando o controlador aqui
+        mecanum_drive_controller,  # Adicionando o controlador aqui
         controller_manager,
-        load_diff_drive_controller
-        # slam_node,
+        # load_diff_drive_controller
+        slam_node,
         # nav_node,
     ])

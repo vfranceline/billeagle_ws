@@ -47,7 +47,7 @@
 	
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-            <parameters>$(find bill)/config/mecanum_drive_params.yaml</parameters>
+            <parameters>$(find bill)/config/mecanum_drive_controller.yaml</parameters>
         </plugin>        
     </gazebo>
 

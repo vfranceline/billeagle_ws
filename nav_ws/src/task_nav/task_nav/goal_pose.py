@@ -59,7 +59,7 @@ def main(args=None):
     # Define a target pose
     target_pose = PoseStamped()
     target_pose.header.frame_id = 'map'
-    target_pose.pose.position.x = -2.16
+    target_pose.pose.position.x = 2.06498
     target_pose.pose.position.y = 0.764
     target_pose.pose.position.z = 0.0
     target_pose.pose.orientation.x = 0.0

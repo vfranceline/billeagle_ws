@@ -17,6 +17,8 @@ def generate_launch_description():
     
     # Path to configuration file 
     params_file = os.path.join(get_package_share_directory(package_name),'config', 'slam_params.yaml')
+    params_file_sync = os.path.join(get_package_share_directory(package_name),'config', 'sync_slam_params.yaml')
+
 
     # Declare the launch configuration
     declare_use_sim_time = DeclareLaunchArgument(
@@ -36,10 +38,23 @@ def generate_launch_description():
         parameters=[params_file, {'use_sim_time': use_sim_time}]
     )
 
+    slam_sync_node = Node(
+        package='slam_toolbox',
+            executable='sync_slam_toolbox_node',
+            name='slam_toolbox',
+            output='screen',
+            parameters=[{
+                'use_sim_time': False,
+                'slam_params_file': params_file_sync
+            }],
+            remappings=[('scan', '/scan')]  # Certifique-se que o tópico está correto
+    )
+
     # Launch!
     ld = LaunchDescription()
     ld.add_action(declare_use_sim_time)
     ld.add_action(declare_params_file)
     ld.add_action(slam_node)
+    # ld.add_action(slam_sync_node)
 
     return ld

@@ -88,17 +88,25 @@ ekf_filter_node:
 # do not provide some of the state variables estimated by the filter. For example, a TwistWithCovarianceStamped message
 # has no pose information, so the first six values would be meaningless in that case. Each vector defaults to all false
 # if unspecified, effectively making this parameter required for each sensor.
-        odom0_config: [true, true, true,
-                       false, false, false,
-                       true,  true,  true,
-                       false, false, true,
-                       false, false, false]
+        odom0_config: [true, true, false,    # x, y, z (z desabilitado)
+                        false, false, true,    # roll, pitch desabilitados; yaw habilitado
+                        true, true, false,     # vx, vy habilitados; vz desabilitado
+                        false, false, true,    # vroll, vpitch desabilitados; vyaw habilitado
+                        false, false, false]   # acelerações desabilitadas
+
+        
+        # odom0_config: [true, true, true,
+        #                false, false, false,
+        #                true,  true,  true,
+        #                false, false, true,
+        #                false, false, false]
 
         # odom0_config: [true,  true,  true,
         #                false, false, false,
         #                false, false, false,
         #                false, false, true,
         #                false, false, false]
+        
 
         #        [x_pos   , y_pos    , z_pos,
         #         roll    , pitch    , yaw,
@@ -165,6 +173,23 @@ ekf_filter_node:
 # # this to true, and make sure your data conforms to REP-103, specifically, that the data is in ENU frame.
 #         imu0_remove_gravitational_acceleration: true
 
+        # odom1: /slam_toolbox/odometry
+        # odom1_config: [true, true, false,    # x, y, z (z desabilitado)
+        #                 false, false, true,    # roll, pitch desabilitados; yaw habilitado
+        #                 true, true, false,     # vx, vy habilitados; vz desabilitado
+        #                 false, false, true,    # vroll, vpitch desabilitados; vyaw habilitado
+        #                 false, false, false]   # acelerações desabilitadas
+        # odom1_queue_size: 2
+
+        odom1: /odom_rf2o
+        odom1_config: [true, true, false,    # x, y, z (z desabilitado)
+                        false, false, true,    # roll, pitch desabilitados; yaw habilitado
+                        true, true, false,     # vx, vy habilitados; vz desabilitado
+                        false, false, true,    # vroll, vpitch desabilitados; vyaw habilitado
+                        false, false, false]   # acelerações desabilitadas
+        odom1_queue_size: 2
+
+
 # [ADVANCED]  The EKF and UKF models follow a standard predict/correct cycle. During prediction, if there is no
 # acceleration reference, the velocity at time t+1 is simply predicted to be the same as the velocity at time t. During
 # correction, this predicted value is fused with the measured value to produce the new velocity estimate. This can be
@@ -176,8 +201,10 @@ ekf_filter_node:
 # make the prediction. If control is used, it will get converted into an acceleration term, which will be used during
 # predicition. Note that if an acceleration measurement for the variable in question is available from one of the
 # inputs, the control term will be ignored.
+
 # Whether or not we use the control input during predicition. Defaults to false.
-        use_control: false
+        use_control: true #mudei para true pois utilizamos o cmd_vel
+
 # Whether the input (assumed to be cmd_vel) is a geometry_msgs/Twist or geometry_msgs/TwistStamped message. Defaults to
 # false.
         stamped_control: false

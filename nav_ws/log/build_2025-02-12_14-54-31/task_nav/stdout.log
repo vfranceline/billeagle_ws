@@ -1,0 +1,32 @@
+running egg_info
+writing ../../build/task_nav/task_nav.egg-info/PKG-INFO
+writing dependency_links to ../../build/task_nav/task_nav.egg-info/dependency_links.txt
+writing entry points to ../../build/task_nav/task_nav.egg-info/entry_points.txt
+writing requirements to ../../build/task_nav/task_nav.egg-info/requires.txt
+writing top-level names to ../../build/task_nav/task_nav.egg-info/top_level.txt
+reading manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+writing manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+running build
+running build_py
+copying task_nav/tf_pub.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+copying task_nav/mecanum_drive.py -> /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+running install
+running install_lib
+copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/tf_pub.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+copying /home/vfran/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/mecanum_drive.py -> /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/tf_pub.py to tf_pub.cpython-310.pyc
+byte-compiling /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/mecanum_drive.py to mecanum_drive.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/task_nav/task_nav.egg-info to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav-0.0.0-py3.10.egg-info
+running install_scripts
+Installing fake_node script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing goal_pose script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing init_pose script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing inspection_routine script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing mecanum_drive script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing object_avoidance script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing pub_turned script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+Installing turn_around script to /home/vfran/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+writing list of installed files to '/home/vfran/billeagle_ws/nav_ws/build/task_nav/install.log'

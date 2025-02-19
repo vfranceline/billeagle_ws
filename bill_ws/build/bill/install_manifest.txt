@@ -3,7 +3,9 @@
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/gazebo_params.yaml
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/nav_params.yaml
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/slam_params.yaml
-/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/mecanum_drive_params.yaml
+/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/sync_slam.yaml
+/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/mecanum_drive_controller.yaml
+/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/nav2_params.yaml
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/config/ekf.yaml
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/common.xacro
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/gazebo_control.xacro
@@ -13,8 +15,10 @@
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/description/robot_core.xacro
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/robot.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/sim.launch.py
+/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/nav2.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/rsp.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/slam.launch.py
+/home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/localization.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/nav.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/launch/lidar.launch.py
 /home/vfran/billeagle_ws/bill_ws/install/bill/share/bill/worlds/test.world
