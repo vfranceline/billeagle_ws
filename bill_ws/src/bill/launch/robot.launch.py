@@ -8,6 +8,7 @@ from launch.substitutions import LaunchConfiguration, PythonExpression
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.actions import IncludeLaunchDescription, DeclareLaunchArgument, GroupAction
 import launch_ros.actions
+import launch.actions
 
 
 def generate_launch_description():
@@ -108,7 +109,16 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
+        remappings=[('odometry/filtered', 'odom')],
         parameters=[os.path.join(get_package_share_directory('bill'), 'config', 'ekf.yaml')],
+    )
+
+    joint_state_publisher = Node(
+        package="joint_state_publisher",
+        executable="joint_state_publisher",
+        name="joint_state_publisher",
+        parameters=[{'use_gui': False}],
+        output="screen",
     )
 
     # Launch mecanum_drive_controller
@@ -120,6 +130,23 @@ def generate_launch_description():
         output='screen'
     )
 
+    controller_manager = Node(
+        package="controller_manager",
+        executable="ros2_control_node",
+        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'mecanum_drive_controller.yaml')],
+        output="screen",
+    )
+
+    load_diff_drive_controller = launch.actions.TimerAction(
+    period=3.0,  # Espera 3 segundos antes de rodar o spawner
+    actions=[Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["diff_drive_controller"],
+        output="screen",
+    )]
+)
+
     # Launch them all!
     return LaunchDescription([
         # Declare launch arguments
@@ -130,11 +157,14 @@ def generate_launch_description():
         # Launch the nodes
         rviz2,
         rsp,
-        static_tf_odom,
+        joint_state_publisher,
+        # static_tf_odom,
         tf2_node,
-        # robot_localization,  # o micro ros tá fazendo isso?
+        robot_localization,  
         twist_mux,
+        mecanum_drive_controller,  # Adicionando o controlador aqui
+        controller_manager,
+        # load_diff_drive_controller
         slam_node,
-        nav_node,
-        mecanum_drive_controller  # Adicionando o controlador aqui
+        # nav_node,
     ])

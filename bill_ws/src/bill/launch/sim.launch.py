@@ -143,5 +143,5 @@ def generate_launch_description():
         gazebo_client,
         spawn_diff_bot,
         slam_node,
-        nav_node,
+        # nav_node,
     ])

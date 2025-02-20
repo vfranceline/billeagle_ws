@@ -36,12 +36,12 @@
                 <scan>
                     <horizontal>
                         <samples>160</samples>
-                        <min_angle>-1.4</min_angle> <!-- Ângulo de -80º -->
-                        <max_angle>1.4</max_angle>  <!-- Ângulo de 80º -->
+                        <min_angle>-1.59</min_angle> <!-- Ângulo de -80º -->
+                        <max_angle>1.59</max_angle>  <!-- Ângulo de 80º -->
                     </horizontal>
                 </scan>
                 <range>
-                    <min>0.3</min>
+                    <min>0.02</min>
                     <max>12</max>
                 </range>
             </ray>
