@@ -41,6 +41,32 @@ class NavigationNode(Node):
         self.get_logger().info("Rotação concluída")
         return True
 
+    # #levando em conta o angle para girar
+    # def execute_spin(self, angle):
+    #     self.get_logger().info(f"Iniciando rotação de {angle} radianos")
+    #     angular_speed = 0.5  # Velocidade angular (rad/s) – ajuste conforme necessário
+    #     spin_duration = abs(angle) / angular_speed
+
+    #     twist_msg = Twist()
+    #     # Define a velocidade angular de acordo com o sinal do ângulo
+    #     twist_msg.angular.z = math.copysign(angular_speed, angle)
+
+    #     start_time = self.get_clock().now()
+    #     elapsed = 0.0
+    #     rate = 0.1  # Intervalo de publicação (10 Hz)
+
+    #     while elapsed < spin_duration:
+    #         self.cmd_vel_pub.publish(twist_msg)
+    #         time.sleep(rate)
+    #         now = self.get_clock().now()
+    #         elapsed = (now - start_time).nanoseconds / 1e9
+
+    #     # Para a rotação publicando velocidade zero
+    #     twist_msg.angular.z = 0.0
+    #     self.cmd_vel_pub.publish(twist_msg)
+    #     self.get_logger().info("Rotação concluída")
+    #     return True
+
 
 
 def main(args=None):
