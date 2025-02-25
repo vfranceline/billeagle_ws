@@ -1,0 +1,11 @@
+{
+  "package_name": "bill_interfaces",
+  "non_idl_tuples": [
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:msg/MissionStatus.msg",
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:srv/GetName.srv",
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:srv/SearchFor.srv",
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:srv/GetTrained.srv",
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:srv/ExecuteSpin.srv",
+    "/home/vic/billeagle_ws/personal_ws/src/bill_interfaces:srv/SaySomething.srv"
+  ]
+}

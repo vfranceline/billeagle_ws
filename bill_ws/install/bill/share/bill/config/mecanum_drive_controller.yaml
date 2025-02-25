@@ -1,0 +1,24 @@
+ros__parameters:
+    controller_manager:
+        update_rate: 50
+
+    mecanum_drive_controller:
+        type: mecanum_drive_controller/MecanumDriveController
+        use_sim_time: false
+        publish_rate: 50
+        odom_frame_id: odom
+        base_frame_id: base_link
+
+        front_left_wheel: "front_left_wheel_joint"
+        front_right_wheel: "front_right_wheel_joint"
+        rear_left_wheel: "rear_left_wheel_joint"
+        rear_right_wheel: "rear_right_wheel_joint"
+
+        wheel_separation: 0.4   # Distância entre as rodas esquerda e direita
+        wheel_radius: 0.07      # Raio da roda
+
+        enable_odom_tf: false  # O EKF já publicará a odometria
+        cmd_vel_timeout: 0.5   # Tempo de espera antes de parar o robô
+
+        pose_covariance_diagonal: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+        twist_covariance_diagonal: [0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
