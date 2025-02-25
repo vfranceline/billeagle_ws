@@ -15,6 +15,7 @@ from sensor_msgs.msg import Image
 from bill_interfaces.srv import GetTrained
 from bill_interfaces.srv import SearchFor
 
+
 class FaceRecognitionNode(Node): 
     def __init__(self):
         super().__init__("face_recognition") 
@@ -28,11 +29,16 @@ class FaceRecognitionNode(Node):
             self.get_logger().error("Failed to open camera.")
             self.destroy_node()
             return
+
+        else:
+            self.get_logger().info("camera.")
+
         
         self._getTrainedService=self.create_service(GetTrained,"get_trained",self.callback_get_trained) 
         self._searchForService=self.create_service(SearchFor,"search_for",self.callback_search_for) 
         self.image_publisher = self.create_publisher(Image, '/camera/image_raw', 10)
-        
+        self.timer = self.create_timer(0.1, self.timer_callback)  # Publica a cada 0.1 segundos
+
         self.get_logger().info("Face Recognition Node has started")
         self.bridge = CvBridge()  # Inicializa o CvBridge para conversão de imagem
         self.reset_capture_state()
@@ -43,6 +49,16 @@ class FaceRecognitionNode(Node):
         self.total_faces_detected = 0
         self.detection_count = {}  # detections count for each person
         self.recognition_count = 0  # recognition counter
+        
+    def timer_callback(self):
+        ret, frame = self.cap.read()
+        if ret:
+            # Converte a imagem OpenCV para uma mensagem ROS2 Image
+            msg = self.bridge.cv2_to_imgmsg(frame, encoding="bgr8")
+            self.image_publisher.publish(msg)
+            self.get_logger().info('Publicando imagem da câmera')
+        else:
+            self.get_logger().error('Falha ao capturar imagem da câmera')
         
     def reset_capture_state(self):
         self.current_capture = 0

@@ -11,10 +11,10 @@ def generate_launch_description():
         package="person_identification_mission",
         executable="voice_speech_recognition"
     )
-    face_recognition_node = Node(
-        package="person_identification_mission",
-        executable="face_recognition"
-    )
+    # face_recognition_node = Node(
+    #     package="person_identification_mission",
+    #     executable="face_recognition"
+    # )
     navigation_node = Node(
         package="person_identification_mission",
         executable="navigation"
@@ -25,7 +25,7 @@ def generate_launch_description():
     )   
     ld.add_action(control_panel_node)
     ld.add_action(voice_speech_recognition_node)
-    ld.add_action(face_recognition_node)
+    # ld.add_action(face_recognition_node)
     ld.add_action(navigation_node)
     ld.add_action(mission_control_node)
     return ld

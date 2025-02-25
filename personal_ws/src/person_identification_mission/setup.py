@@ -24,7 +24,7 @@ setup(
             "voice_speech_recognition = person_identification_mission.voice_speech_recognition:main",
             "face_recognition = person_identification_mission.face_recognition:main",
             "navigation = person_identification_mission.navigation:main",
-            "control_panel = person_identification_mission.control_panel:main"
+            "control_panel = person_identification_mission.control_panel:main",
         ],
     },
 )

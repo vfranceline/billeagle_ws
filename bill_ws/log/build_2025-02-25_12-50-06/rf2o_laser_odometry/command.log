@@ -1,6 +1,0 @@
-Invoking command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry': /usr/bin/cmake /home/vic/billeagle_ws/bill_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/home/vic/billeagle_ws/bill_ws/install/rf2o_laser_odometry
-Invoked command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry' returned '0': /usr/bin/cmake /home/vic/billeagle_ws/bill_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/home/vic/billeagle_ws/bill_ws/install/rf2o_laser_odometry
-Invoking command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry': /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry -- -j16 -l16
-Invoked command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry' returned '0': /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry -- -j16 -l16
-Invoking command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry': /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry
-Invoked command in '/home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry' returned '0': /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/rf2o_laser_odometry
