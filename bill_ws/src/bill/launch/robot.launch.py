@@ -16,15 +16,18 @@ def generate_launch_description():
     # Package name
     package_name='bill' 
 
-    # Set use_sim_time to false
-    use_sim_time = 'false'
-
     # Launch configurations
+    use_sim_time = LaunchConfiguration('use_sim_time')
     rviz = LaunchConfiguration('rviz')
     slam = LaunchConfiguration('slam')
     nav = LaunchConfiguration('nav') 
+    map_file = LaunchConfiguration('map')
 
-    # Launch Arguments        
+    # Launch Arguments
+    declare_use_sim_time = DeclareLaunchArgument(
+        name='use_sim_time', default_value='false',
+        description='Use simulation (Gazebo) clock if true')
+            
     declare_rviz = DeclareLaunchArgument(
         name='rviz', default_value='True',
         description='Opens rviz if set to True')
@@ -36,6 +39,12 @@ def generate_launch_description():
     declare_nav = DeclareLaunchArgument(
         name='nav', default_value='True',
         description='Activates the navigation stack')
+    
+    declare_map = DeclareLaunchArgument(
+        name='map',
+        default_value=os.path.join(get_package_share_directory(package_name), 'maps', 'finalmente.yaml'),
+        description='Full path to map yaml file to load'
+    )
      
     # Launch Robot State Publisher
     urdf_path = os.path.join(get_package_share_directory(package_name),'description','robot.urdf.xacro')
@@ -88,6 +97,16 @@ def generate_launch_description():
                     PythonLaunchDescriptionSource([os.path.join(
                         get_package_share_directory(package_name),'launch','nav.launch.py'
                     )]), launch_arguments={'use_sim_time': use_sim_time, 'params_file': nav_params}.items())]
+    )
+    localization_params = os.path.join(get_package_share_directory(package_name), 'config', 'nav2_params.yaml')
+    localization_node = GroupAction(
+        condition=IfCondition(nav),
+        actions=[IncludeLaunchDescription(
+                    PythonLaunchDescriptionSource([os.path.join(
+                        get_package_share_directory(package_name),'launch','localization.launch.py'
+                    )]), launch_arguments={'use_sim_time': use_sim_time, 
+                                           'params_file': localization_params,
+                                           'map': LaunchConfiguration('map')}.items())]
     )
 
     static_tf_odom = launch_ros.actions.Node(
@@ -150,21 +169,22 @@ def generate_launch_description():
     # Launch them all!
     return LaunchDescription([
         # Declare launch arguments
+        declare_use_sim_time,
         declare_rviz,
         declare_slam,
         declare_nav,
+        declare_map,
 
         # Launch the nodes
         rviz2,
         rsp,
         joint_state_publisher,
-        # static_tf_odom,
         tf2_node,
         robot_localization,  
         twist_mux,
         mecanum_drive_controller,  # Adicionando o controlador aqui
         controller_manager,
-        # load_diff_drive_controller
-        slam_node,
+        # slam_node,
         # nav_node,
+        localization_node
     ])
