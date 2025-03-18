@@ -1,0 +1,67 @@
+[0.006s] Invoking command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_driver': AMENT_PREFIX_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/bill8/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_driver
+[0.018s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[0.019s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.109s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.111s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.114s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.119s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.126s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.143s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.144s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.201s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.237s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.242s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[0.254s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[0.449s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.455s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.455s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.553s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[0.559s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.565s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.663s] -- Found Qhull version 8.0.2
+[0.759s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.854s] -- looking for PCL_COMMON
+[0.854s] -- looking for PCL_KDTREE
+[0.854s] -- looking for PCL_OCTREE
+[0.855s] -- looking for PCL_SEARCH
+[0.855s] -- looking for PCL_SAMPLE_CONSENSUS
+[0.855s] -- looking for PCL_FILTERS
+[0.855s] -- looking for PCL_2D
+[0.855s] -- looking for PCL_GEOMETRY
+[0.855s] -- looking for PCL_IO
+[0.855s] -- looking for PCL_FEATURES
+[0.856s] -- looking for PCL_ML
+[0.856s] -- looking for PCL_SEGMENTATION
+[0.856s] -- looking for PCL_VISUALIZATION
+[0.856s] -- looking for PCL_SURFACE
+[0.857s] -- looking for PCL_REGISTRATION
+[0.857s] -- looking for PCL_KEYPOINTS
+[0.857s] -- looking for PCL_TRACKING
+[0.857s] -- looking for PCL_RECOGNITION
+[0.857s] -- looking for PCL_STEREO
+[0.858s] -- looking for PCL_APPS
+[0.858s] -- looking for PCL_IN_HAND_SCANNER
+[0.858s] -- looking for PCL_MODELER
+[0.858s] -- looking for PCL_POINT_CLOUD_EDITOR
+[0.859s] -- looking for PCL_OUTOFCORE
+[0.859s] -- looking for PCL_PEOPLE
+[0.864s] -- Configuring incomplete, errors occurred!
+[0.864s] See also "/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_driver/CMakeFiles/CMakeOutput.log".
+[0.864s] [31mCMake Error at CMakeLists.txt:22 (find_package):
+[0.864s]   By not providing "Finddiagnostic_updater.cmake" in CMAKE_MODULE_PATH this
+[0.864s]   project has asked CMake to find a package configuration file provided by
+[0.865s]   "diagnostic_updater", but CMake did not find one.
+[0.865s] 
+[0.865s]   Could not find a package configuration file provided by
+[0.865s]   "diagnostic_updater" with any of the following names:
+[0.865s] 
+[0.865s]     diagnostic_updaterConfig.cmake
+[0.865s]     diagnostic_updater-config.cmake
+[0.865s] 
+[0.865s]   Add the installation prefix of "diagnostic_updater" to CMAKE_PREFIX_PATH or
+[0.865s]   set "diagnostic_updater_DIR" to a directory containing one of the above
+[0.865s]   files.  If "diagnostic_updater" provides a separate development package or
+[0.865s]   SDK, be sure it has been installed.
+[0.865s] 
+[0.866s] [0m
+[0.873s] Invoked command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_driver' returned '1': AMENT_PREFIX_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/bill8/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_driver -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/lslidar_ws/install/lslidar_driver
