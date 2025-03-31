@@ -16,7 +16,7 @@ def generate_launch_description():
 
     map_file_arg = DeclareLaunchArgument(
         "map_file",
-        default_value=PathJoinSubstitution([FindPackageShare("bill_slam"), "mapas", "mapa_home.yaml"]),
+        default_value=PathJoinSubstitution([FindPackageShare("bill_slam"), "mapas", "mapa_athome_save.yaml"]),
         description="Full path to the yaml map file",
     )
 

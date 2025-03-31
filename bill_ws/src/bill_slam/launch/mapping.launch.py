@@ -14,7 +14,7 @@ def generate_launch_description():
     use_saved_map = LaunchConfiguration('use_saved_map')
 
     default_map_path = PathJoinSubstitution(
-        [FindPackageShare("bill_slam"), 'mapas', 'mapa_home_serial']
+        [FindPackageShare("bill_slam"), 'mapas', 'mapa_athome_serial']
     )
     
     slam_params_file_arg = DeclareLaunchArgument(
