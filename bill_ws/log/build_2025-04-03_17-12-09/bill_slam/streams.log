@@ -1,0 +1,68 @@
+[0.010s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_slam
+[0.084s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.084s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.084s]   CMake.
+[0.084s] 
+[0.084s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.084s]   to tell CMake that the project requires at least <min> but has been updated
+[0.085s]   to work with policies introduced by <max> or earlier.
+[0.085s] 
+[0.085s] [0m
+[0.114s] -- The C compiler identification is GNU 11.4.0
+[0.162s] -- The CXX compiler identification is GNU 11.4.0
+[0.170s] -- Detecting C compiler ABI info
+[0.220s] -- Detecting C compiler ABI info - done
+[0.235s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.236s] -- Detecting C compile features
+[0.236s] -- Detecting C compile features - done
+[0.247s] -- Detecting CXX compiler ABI info
+[0.301s] -- Detecting CXX compiler ABI info - done
+[0.313s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.313s] -- Detecting CXX compile features
+[0.313s] -- Detecting CXX compile features - done
+[0.319s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.448s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.516s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.574s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.577s] -- Added test 'lint_cmake' to check CMake code style
+[0.577s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.577s] -- Added test 'xmllint' to check XML markup files
+[0.577s] -- Configuring done (0.5s)
+[0.578s] -- Generating done (0.0s)
+[0.579s] -- Build files have been written to: /home/bill8/billeagle_ws/bill_ws/build/bill_slam
+[0.583s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_slam
+[0.585s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_slam -- -j16 -l16
+[0.706s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_slam -- -j16 -l16
+[0.708s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_slam
+[0.756s] -- Install configuration: ""
+[0.756s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config
+[0.756s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config/amcl.config.yaml
+[0.764s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config/slam_toolbox_params.yaml
+[0.767s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch
+[0.767s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch/mapping.launch.py
+[0.767s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch/amcl.launch.py
+[0.767s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas
+[0.767s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home.yaml
+[0.768s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_serial.posegraph
+[0.775s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_serial.data
+[0.776s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_save.pgm
+[0.776s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_save.pgm
+[0.776s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_save.yaml
+[0.777s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_serial.data
+[0.777s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_serial.posegraph
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/package_run_dependencies/bill_slam
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/parent_prefix_path/bill_slam
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/ament_prefix_path.sh
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/ament_prefix_path.dsv
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/path.sh
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/path.dsv
+[0.789s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.bash
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.sh
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.zsh
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.dsv
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/package.dsv
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/packages/bill_slam
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/cmake/bill_slamConfig.cmake
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/cmake/bill_slamConfig-version.cmake
+[0.790s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/package.xml
+[0.801s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_slam
