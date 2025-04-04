@@ -35,9 +35,9 @@
             <ray>
                 <scan>
                     <horizontal>
-                        <samples>160</samples>
-                        <min_angle>-1.59</min_angle> <!-- Ângulo de -80º -->
-                        <max_angle>1.59</max_angle>  <!-- Ângulo de 80º -->
+                        <samples>140</samples>
+                        <min_angle>-1.2217</min_angle> <!-- Ângulo de -70º -->
+                        <max_angle>1.2217</max_angle>  <!-- Ângulo de 70º -->
                     </horizontal>
                 </scan>
                 <range>

@@ -77,21 +77,21 @@ def generate_launch_description():
                     arguments=['0', '0', '0.02','0', '0', '0', '1','base_link','laser_link'],
     )
 
-    # Launch mecanum_drive_controller
-    mecanum_drive_controller = Node(
-        package='controller_manager',
-        executable='spawner',
-        name='mecanum_drive_controller',
-        arguments=['mecanum_drive_controller'],
-        output='screen'
-    )
+    # # Launch mecanum_drive_controller
+    # mecanum_drive_controller = Node(
+    #     package='controller_manager',
+    #     executable='spawner',
+    #     name='mecanum_drive_controller',
+    #     arguments=['mecanum_drive_controller'],
+    #     output='screen'
+    # )
 
-    controller_manager = Node(
-        package="controller_manager",
-        executable="ros2_control_node",
-        parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'mecanum_drive_controller.yaml')],
-        output="screen",
-    )
+    # controller_manager = Node(
+    #     package="controller_manager",
+    #     executable="ros2_control_node",
+    #     parameters=[os.path.join(get_package_share_directory(package_name), 'config', 'mecanum_drive_controller.yaml')],
+    #     output="screen",
+    # )
 
     # Launch them all!
     return LaunchDescription([
