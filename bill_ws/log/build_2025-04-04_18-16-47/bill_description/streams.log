@@ -1,0 +1,73 @@
+[0.010s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_description
+[0.071s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.071s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.071s]   CMake.
+[0.071s] 
+[0.071s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.071s]   to tell CMake that the project requires at least <min> but has been updated
+[0.071s]   to work with policies introduced by <max> or earlier.
+[0.071s] 
+[0.071s] [0m
+[0.108s] -- The C compiler identification is GNU 11.4.0
+[0.160s] -- The CXX compiler identification is GNU 11.4.0
+[0.167s] -- Detecting C compiler ABI info
+[0.210s] -- Detecting C compiler ABI info - done
+[0.221s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.221s] -- Detecting C compile features
+[0.222s] -- Detecting C compile features - done
+[0.231s] -- Detecting CXX compiler ABI info
+[0.282s] -- Detecting CXX compiler ABI info - done
+[0.293s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.293s] -- Detecting CXX compile features
+[0.294s] -- Detecting CXX compile features - done
+[0.301s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.399s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.457s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.511s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.511s] -- Added test 'lint_cmake' to check CMake code style
+[0.511s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.512s] -- Added test 'xmllint' to check XML markup files
+[0.513s] -- Configuring done (0.4s)
+[0.515s] -- Generating done (0.0s)
+[0.516s] -- Build files have been written to: /home/bill8/billeagle_ws/bill_ws/build/bill_description
+[0.519s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_description -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_description
+[0.520s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_description -- -j16 -l16
+[0.615s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_description -- -j16 -l16
+[0.615s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_description
+[0.668s] -- Install configuration: ""
+[0.668s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch
+[0.668s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/rsp.launch.py
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/robot.launch.py
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/ros2_control.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot_core.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/gazebo_control.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot.urdf.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/common.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/lidar.xacro
+[0.669s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim_map.config.rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/bot.rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/config.rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/nav.config.rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim.config.rviz
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/gazebo_params.yaml
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/mecanum_drive_controller.yaml
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/twist_mux_params.yaml
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/package_run_dependencies/bill_description
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/parent_prefix_path/bill_description
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.sh
+[0.670s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.dsv
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.sh
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.dsv
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.bash
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.sh
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.zsh
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.dsv
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.dsv
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/packages/bill_description
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig.cmake
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig-version.cmake
+[0.671s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.xml
+[0.686s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_description

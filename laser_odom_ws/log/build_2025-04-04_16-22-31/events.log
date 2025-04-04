@@ -1,0 +1,113 @@
+[0.000000] (-) TimerEvent: {}
+[0.000232] (rf2o_laser_odometry) JobQueued: {'identifier': 'rf2o_laser_odometry', 'dependencies': OrderedDict()}
+[0.000264] (rf2o_laser_odometry) JobStarted: {'identifier': 'rf2o_laser_odometry'}
+[0.004856] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'cmake'}
+[0.005299] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'build'}
+[0.005328] (rf2o_laser_odometry) Command: {'cmd': ['/home/bill8/.local/bin/cmake', '--build', '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry', '--', '-j16', '-l16'], 'cwd': '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bill8'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bill8/microros_ws/install/micro_ros_agent/lib:/home/bill8/microros_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill8'), ('OLDPWD', '/home/bill8/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '1714'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4120'), ('COLCON_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install:/home/bill8/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'bill8'), ('JOURNAL_STREAM', '8:15816'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill8'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/bill8/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill8:@/tmp/.ICE-unix/1944,unix/bill8:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', '22ec395e11dc4c1eb97a2c5b6d676f61'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry:/home/bill8/microros_ws/install/micro_ros_setup:/home/bill8/microros_ws/install/micro_ros_agent:/home/bill8/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b6627f81-7773-4a4a-9adb-391055abe5a3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bill8/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry:/home/bill8/microros_ws/install/micro_ros_setup:/home/bill8/microros_ws/install/micro_ros_agent:/home/bill8/microros_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[0.083940] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 40%] Built target rf2o_laser_odometry\n'}
+[0.086836] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2DNode.cpp.o\x1b[0m\n'}
+[0.099320] (-) TimerEvent: {}
+[0.199545] (-) TimerEvent: {}
+[0.299830] (-) TimerEvent: {}
+[0.400126] (-) TimerEvent: {}
+[0.500385] (-) TimerEvent: {}
+[0.600645] (-) TimerEvent: {}
+[0.700934] (-) TimerEvent: {}
+[0.801317] (-) TimerEvent: {}
+[0.901650] (-) TimerEvent: {}
+[1.001917] (-) TimerEvent: {}
+[1.102209] (-) TimerEvent: {}
+[1.202614] (-) TimerEvent: {}
+[1.302908] (-) TimerEvent: {}
+[1.403262] (-) TimerEvent: {}
+[1.503653] (-) TimerEvent: {}
+[1.603941] (-) TimerEvent: {}
+[1.704329] (-) TimerEvent: {}
+[1.804725] (-) TimerEvent: {}
+[1.905050] (-) TimerEvent: {}
+[2.005450] (-) TimerEvent: {}
+[2.105813] (-) TimerEvent: {}
+[2.206171] (-) TimerEvent: {}
+[2.306443] (-) TimerEvent: {}
+[2.406832] (-) TimerEvent: {}
+[2.507225] (-) TimerEvent: {}
+[2.607635] (-) TimerEvent: {}
+[2.707923] (-) TimerEvent: {}
+[2.808216] (-) TimerEvent: {}
+[2.908583] (-) TimerEvent: {}
+[3.008968] (-) TimerEvent: {}
+[3.109291] (-) TimerEvent: {}
+[3.209591] (-) TimerEvent: {}
+[3.309987] (-) TimerEvent: {}
+[3.410421] (-) TimerEvent: {}
+[3.510813] (-) TimerEvent: {}
+[3.611193] (-) TimerEvent: {}
+[3.711579] (-) TimerEvent: {}
+[3.811967] (-) TimerEvent: {}
+[3.912366] (-) TimerEvent: {}
+[4.012641] (-) TimerEvent: {}
+[4.113032] (-) TimerEvent: {}
+[4.213447] (-) TimerEvent: {}
+[4.313756] (-) TimerEvent: {}
+[4.414013] (-) TimerEvent: {}
+[4.514272] (-) TimerEvent: {}
+[4.614582] (-) TimerEvent: {}
+[4.714839] (-) TimerEvent: {}
+[4.815214] (-) TimerEvent: {}
+[4.915593] (-) TimerEvent: {}
+[5.015972] (-) TimerEvent: {}
+[5.116355] (-) TimerEvent: {}
+[5.216758] (-) TimerEvent: {}
+[5.317044] (-) TimerEvent: {}
+[5.417449] (-) TimerEvent: {}
+[5.517705] (-) TimerEvent: {}
+[5.618077] (-) TimerEvent: {}
+[5.718422] (-) TimerEvent: {}
+[5.818679] (-) TimerEvent: {}
+[5.919059] (-) TimerEvent: {}
+[6.019345] (-) TimerEvent: {}
+[6.119649] (-) TimerEvent: {}
+[6.220033] (-) TimerEvent: {}
+[6.320435] (-) TimerEvent: {}
+[6.420696] (-) TimerEvent: {}
+[6.520983] (-) TimerEvent: {}
+[6.621363] (-) TimerEvent: {}
+[6.721751] (-) TimerEvent: {}
+[6.822016] (-) TimerEvent: {}
+[6.922308] (-) TimerEvent: {}
+[7.022585] (-) TimerEvent: {}
+[7.042765] (rf2o_laser_odometry) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable rf2o_laser_odometry_node\x1b[0m\n'}
+[7.122812] (-) TimerEvent: {}
+[7.223220] (-) TimerEvent: {}
+[7.323653] (-) TimerEvent: {}
+[7.424051] (-) TimerEvent: {}
+[7.524461] (-) TimerEvent: {}
+[7.624868] (-) TimerEvent: {}
+[7.693995] (rf2o_laser_odometry) StdoutLine: {'line': b'[100%] Built target rf2o_laser_odometry_node\n'}
+[7.703995] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[7.704840] (rf2o_laser_odometry) JobProgress: {'identifier': 'rf2o_laser_odometry', 'progress': 'install'}
+[7.724979] (-) TimerEvent: {}
+[7.750672] (rf2o_laser_odometry) Command: {'cmd': ['/home/bill8/.local/bin/cmake', '--install', '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry'], 'cwd': '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'bill8'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bill8/microros_ws/install/micro_ros_agent/lib:/home/bill8/microros_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill8'), ('OLDPWD', '/home/bill8/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '1714'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2180'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4120'), ('COLCON_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install:/home/bill8/microros_ws/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'bill8'), ('JOURNAL_STREAM', '8:15816'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill8'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda/bin:/opt/ros/humble/bin:/home/bill8/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill8:@/tmp/.ICE-unix/1944,unix/bill8:/tmp/.ICE-unix/1944'), ('INVOCATION_ID', '22ec395e11dc4c1eb97a2c5b6d676f61'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry:/home/bill8/microros_ws/install/micro_ros_setup:/home/bill8/microros_ws/install/micro_ros_agent:/home/bill8/microros_ws/install/micro_ros_msgs:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:b6627f81-7773-4a4a-9adb-391055abe5a3'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill8/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bill8/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry:/home/bill8/microros_ws/install/micro_ros_setup:/home/bill8/microros_ws/install/micro_ros_agent:/home/bill8/microros_ws/install/micro_ros_msgs:/opt/ros/humble')]), 'shell': False}
+[7.800736] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.800982] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node\n'}
+[7.807551] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node" to ""\n'}
+[7.807640] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch\n'}
+[7.807678] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py\n'}
+[7.807817] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry\n'}
+[7.807888] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry\n'}
+[7.807922] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh\n'}
+[7.807950] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv\n'}
+[7.807979] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh\n'}
+[7.808006] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv\n'}
+[7.808032] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash\n'}
+[7.808066] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh\n'}
+[7.808092] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh\n'}
+[7.808118] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv\n'}
+[7.808143] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Installing: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv\n'}
+[7.808170] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry\n'}
+[7.808196] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake\n'}
+[7.808223] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake\n'}
+[7.808249] (rf2o_laser_odometry) StdoutLine: {'line': b'-- Up-to-date: /home/bill8/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml\n'}
+[7.808784] (rf2o_laser_odometry) CommandEnded: {'returncode': 0}
+[7.818547] (rf2o_laser_odometry) JobEnded: {'identifier': 'rf2o_laser_odometry', 'rc': 0}
+[7.819003] (-) EventReactorShutdown: {}

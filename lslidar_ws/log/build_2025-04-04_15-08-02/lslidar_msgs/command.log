@@ -1,0 +1,4 @@
+Invoking command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs -- -j16 -l16
+Invoked command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs -- -j16 -l16
+Invoking command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs
+Invoked command in '/home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/lslidar_ws/build/lslidar_msgs
