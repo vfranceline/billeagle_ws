@@ -1,0 +1,43 @@
+[0.023s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_slam
+[0.168s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.169s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.169s]   CMake.
+[0.169s] 
+[0.169s]   Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+[0.169s]   to tell CMake that the project requires at least <min> but has been updated
+[0.170s]   to work with policies introduced by <max> or earlier.
+[0.170s] 
+[0.170s] [0m
+[0.325s] -- The C compiler identification is GNU 11.4.0
+[0.459s] -- The CXX compiler identification is GNU 11.4.0
+[0.480s] -- Detecting C compiler ABI info
+[0.597s] -- Detecting C compiler ABI info - done
+[0.630s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.631s] -- Detecting C compile features
+[0.632s] -- Detecting C compile features - done
+[0.656s] -- Detecting CXX compiler ABI info
+[0.794s] -- Detecting CXX compiler ABI info - done
+[0.827s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.828s] -- Detecting CXX compile features
+[0.830s] -- Detecting CXX compile features - done
+[0.852s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.089s] -- Found Python3: /home/bill8/miniconda3/bin/python3 (found version "3.12.9") found components: Interpreter
+[1.316s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.364s] Traceback (most recent call last):
+[1.364s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 22, in <module>
+[1.365s]     from catkin_pkg.package import parse_package_string
+[1.365s] ModuleNotFoundError: No module named 'catkin_pkg'
+[1.370s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[1.371s]   execute_process(/home/bill8/miniconda3/bin/python3
+[1.371s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[1.371s]   /home/bill8/billeagle_ws/bill_ws/src/bill_slam/package.xml
+[1.371s]   /home/bill8/billeagle_ws/bill_ws/build/bill_slam/ament_cmake_core/package.cmake)
+[1.371s]   returned error code 1
+[1.371s] Call Stack (most recent call first):
+[1.371s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[1.371s]   /opt/ros/humble/share/ament_lint_auto/cmake/ament_lint_auto_find_test_dependencies.cmake:31 (ament_package_xml)
+[1.371s]   CMakeLists.txt:26 (ament_lint_auto_find_test_dependencies)
+[1.371s] 
+[1.371s] [0m
+[1.372s] -- Configuring incomplete, errors occurred!
+[1.381s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_slam' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake /home/bill8/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill8/billeagle_ws/bill_ws/install/bill_slam

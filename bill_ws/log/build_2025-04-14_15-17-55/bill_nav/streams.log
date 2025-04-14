@@ -1,0 +1,24 @@
+[0.026s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_nav -- -j16 -l16
+[0.300s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake --build /home/bill8/billeagle_ws/bill_ws/build/bill_nav -- -j16 -l16
+[0.302s] Invoking command in '/home/bill8/billeagle_ws/bill_ws/build/bill_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_nav
+[0.453s] -- Install configuration: ""
+[0.453s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/config
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/config/nav2_params.yaml
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/launch
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/launch/navigation_launch.py
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/ament_index/resource_index/package_run_dependencies/bill_nav
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/ament_index/resource_index/parent_prefix_path/bill_nav
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/environment/ament_prefix_path.sh
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/environment/ament_prefix_path.dsv
+[0.454s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/environment/path.sh
+[0.455s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/environment/path.dsv
+[0.455s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/local_setup.bash
+[0.455s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/local_setup.sh
+[0.455s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/local_setup.zsh
+[0.455s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/local_setup.dsv
+[0.455s] -- Installing: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/package.dsv
+[0.457s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/ament_index/resource_index/packages/bill_nav
+[0.457s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/cmake/bill_navConfig.cmake
+[0.457s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/cmake/bill_navConfig-version.cmake
+[0.457s] -- Up-to-date: /home/bill8/billeagle_ws/bill_ws/install/bill_nav/share/bill_nav/package.xml
+[0.489s] Invoked command in '/home/bill8/billeagle_ws/bill_ws/build/bill_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(base) /home/bill8/.local/bin/cmake --install /home/bill8/billeagle_ws/bill_ws/build/bill_nav
