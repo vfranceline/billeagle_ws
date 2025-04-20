@@ -1,1 +1,11 @@
-/home/vfran/billeagle_ws/bill_ws/src/bill/config/twist_mux_params.yaml
+twist_mux:
+  ros__parameters:
+    topics:
+      navigation:
+        topic   : cmd_vel_nav
+        timeout : 0.5
+        priority: 10
+      joystick:
+        topic   : cmd_vel_joy
+        timeout : 0.5
+        priority: 100

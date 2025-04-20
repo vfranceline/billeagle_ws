@@ -32,12 +32,16 @@ def generate_launch_description():
         description='Usar tempo simulado (Gazebo)'
     )
 
-    # Lançar o Gazebo
-    gazebo = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
-        ),
-        launch_arguments={'params_file': gazebo_params_file_dir}.items()
+    # ros2_control_node (controller manager)
+    ros2_control_node = Node(
+        package='controller_manager',
+        executable='ros2_control_node',
+        parameters=[
+            {'use_sim_time': use_sim_time},
+            {'robot_description': robot_description_config},
+            os.path.join(pkg_bill, 'config', 'my_controller.yaml')
+        ],
+        output='screen'
     )
 
     # Nó robot_state_publisher
@@ -50,6 +54,14 @@ def generate_launch_description():
         output='screen'
     )
 
+    # Lançar o Gazebo
+    gazebo = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
+        ),
+        launch_arguments={'params_file': gazebo_params_file_dir}.items()
+    )
+
     # Spawn do robô no Gazebo
     spawn_entity = Node(
         package='gazebo_ros',
@@ -58,9 +70,9 @@ def generate_launch_description():
         output='screen'
     )
 
-    # spawner do joint_state_broadcaster
+    # Spawner do joint_state_broadcaster
     spawn_joints = TimerAction(
-        period=2.0,
+        period=5.0,
         actions=[Node(
             package='controller_manager',
             executable='spawner',
@@ -69,17 +81,19 @@ def generate_launch_description():
         )]
     )
 
-    # spawner do mecanum_controller
+    # Spawner do mecanum_controller
     spawn_mecanum = TimerAction(
-        period=4.0,
+        period=7.0,
         actions=[Node(
             package='controller_manager',
             executable='spawner',
-            arguments=['mecanum_controller',    '--controller-manager', '/controller_manager'],
+            arguments=['mecanum_controller', '--controller-manager', '/controller_manager'],
             output='screen'
         )]
     )
 
+
+    # joint_state_publisher (para visualização no RViz, se necessário)
     joint_state_publisher = Node(
         package="joint_state_publisher",
         executable="joint_state_publisher",
@@ -91,10 +105,11 @@ def generate_launch_description():
     # Criar descrição do launch
     ld = LaunchDescription()
 
-    # Adicionar ações
+    # Adicionar ações na ordem correta
     ld.add_action(declare_use_sim_time)
-    ld.add_action(gazebo)
+    ld.add_action(ros2_control_node)
     ld.add_action(robot_state_publisher_node)
+    ld.add_action(gazebo)
     ld.add_action(spawn_entity)
     ld.add_action(spawn_joints)
     ld.add_action(spawn_mecanum)

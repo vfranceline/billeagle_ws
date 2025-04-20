@@ -135,11 +135,10 @@
 
     <!-- base_footprint fixo ao base_link -->
     <link name="base_footprint"/>
-
     <joint name="base_footprint_joint" type="fixed">
         <parent link="base_link"/> 
         <child link="base_footprint"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <origin xyz="0 0 -0.585" rpy="0 0 0"/>
     </joint>
 
 
@@ -152,7 +151,7 @@
     <joint name="base_to_chassis" type="fixed">
         <parent link="base_link"/>
         <child link="chassis"/>
-        <origin xyz="0 0 ${chassis_height/2}" rpy="0 0 0"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
     </joint>
 
     <!-- Juntas das rodas mecanum -->
@@ -197,6 +196,7 @@
         </actuator>
         </transmission>
     </xacro:macro>
+
     <xacro:simple_transmission joint="wheel_front_left_joint"  actuator="wheel_front_left_motor"/>
     <xacro:simple_transmission joint="wheel_front_right_joint" actuator="wheel_front_right_motor"/>
     <xacro:simple_transmission joint="wheel_rear_left_joint"   actuator="wheel_rear_left_motor"/>
@@ -205,13 +205,45 @@
     <!-- 2) Plugin ros2_control para Gazebo -->
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-        <robotNamespace/>
-        <controlPeriod>0.01</controlPeriod>
-        <robotSimType>gazebo_ros2_control/DefaultRobotHWSim</robotSimType>
+            <!-- de onde vem o URDF -->
+            <robot_param>robot_description</robot_param>
+            <!-- qual nó publicou o robot_description -->
+            <robot_param_node>robot_state_publisher</robot_param_node>
+            <!-- período de atualização (10 ms) -->
+            <controlPeriod>0.01</controlPeriod>
+            <!-- tipo de simulação de hardware -->
+            <robotSimType>gazebo_ros2_control/DefaultRobotHWSim</robotSimType>
+            <!-- aponta pro seu arquivo de controladores -->
+            <parameters>$(find bill_description)/config/my_controller.yaml</parameters>
         </plugin>
     </gazebo>
 
-    <gazebo>
+
+
+    <ros2_control name="GazeboSystem" type="system">
+        <hardware>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+        </hardware>
+        <joint name="wheel_front_left_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wheel_front_right_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wheel_rear_left_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="velocity"/>
+        </joint>
+        <joint name="wheel_rear_right_joint">
+            <command_interface name="velocity"/>
+            <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>
+
+
+    <!-- <gazebo>
       <plugin filename="libgazebo_ros_planar_move.so" name="mecanum_drive">
         <commandTopic>cmd_vel</commandTopic>
         <odometryTopic>odom</odometryTopic>
@@ -220,6 +252,6 @@
         <robotBaseFrame>base_footprint</robotBaseFrame>
         <publishTF>True</publishTF>
       </plugin>
-    </gazebo>
+    </gazebo> -->
 
 </robot>

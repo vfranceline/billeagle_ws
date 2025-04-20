@@ -1,1 +1,45 @@
-/home/vfran/billeagle_ws/bill_ws/src/bill_description/models/myBill/ros2_control.xacro
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" xmlns="http://www.ros.org/urdf">
+
+  <!-- ROS 2 Control interface -->
+  <ros2_control name="MecanumSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <!-- Joints for four mecanum wheels -->
+    <joint name="wheel_front_left_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="wheel_front_right_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="wheel_rear_left_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+      <state_interface name="position"/>
+    </joint>
+
+    <joint name="wheel_rear_right_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="velocity"/>
+      <state_interface name="position"/>
+    </joint>
+  </ros2_control>
+
+  <!-- Gazebo plugin to enable ros2_control -->
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robot_param>bill_description</robot_param> <!-- Usualmente é robot_description -->
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find bill_description)/config/my_controller.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+</robot>

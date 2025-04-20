@@ -1,1 +1,16 @@
-/home/vfran/billeagle_ws/bill_ws/src/bill/config/amcl.yaml
+amcl:
+  ros__parameters:
+    base_frame_id: "base_link"
+    odom_frame_id: "odom"
+    global_frame_id: "map"
+    set_initial_pose: false
+    max_particles: 2000
+    min_particles: 500
+    # Motion model plugin: differential (default) or omni (better for Ackermann)
+    robot_model_type: "nav2_amcl::OmniMotionModel"
+    # Laser scan parameters
+    scan_topic: scan
+    laser_model_type: "likelihood_field"
+    update_min_d: 0.25
+    update_min_a: 0.2
+    # … other parameters as needed

@@ -1,1 +1,2 @@
-/home/vfran/billeagle_ws/bill_ws/build/bill_slam/ament_cmake_environment_hooks/local_setup.dsv
+source;share/bill_slam/environment/ament_prefix_path.sh
+source;share/bill_slam/environment/path.sh

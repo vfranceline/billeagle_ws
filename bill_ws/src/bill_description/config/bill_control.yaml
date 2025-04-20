@@ -1,0 +1,18 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+
+    mecanum_velocity_controller:
+      type: joint_group_velocity_controller/JointGroupVelocityController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+mecanum_velocity_controller:
+  ros__parameters:
+    joints:
+      - wheel_front_left_joint
+      - wheel_front_right_joint
+      - wheel_rear_left_joint
+      - wheel_rear_right_joint
+    interface_name: velocity
