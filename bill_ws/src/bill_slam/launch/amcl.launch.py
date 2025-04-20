@@ -91,7 +91,7 @@ def generate_launch_description():
             map_server_node,
             amcl_node,
             nav_manager,
-            slam_node_saved_map,
+            # slam_node_saved_map,
             # saved_map_path_arg
         ]
     )

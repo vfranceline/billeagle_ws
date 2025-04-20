@@ -13,7 +13,7 @@ find_package(ament_cmake REQUIRED)
 
 # Install launch, models, and rviz directories
 install(
-  DIRECTORY launch description rviz config
+  DIRECTORY launch description models rviz config
   DESTINATION share/${PROJECT_NAME}
 )
 

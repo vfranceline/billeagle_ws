@@ -15,7 +15,8 @@ slam:
     base_frame: base_link
     scan_topic: /scan
     # publish_tf: True
-    mode: localization
+    # mode: localization
+    mode: mapping
 
     # manually added (localization)
     map_start_at_dock: true

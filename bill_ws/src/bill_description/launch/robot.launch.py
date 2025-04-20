@@ -101,12 +101,12 @@ def generate_launch_description():
         
 
         # Launch the nodes
-        rviz2,
+        # rviz2,
         rsp,
         joint_state_publisher,
         tf2_node, 
         twist_mux,
         mecanum_drive_controller,
-        controller_manager,
+        # controller_manager,
        
     ])

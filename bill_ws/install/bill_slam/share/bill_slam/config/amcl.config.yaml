@@ -1,15 +1,1 @@
-amcl:
-  ros__parameters:
-    use_sim_time: True #tentar mudar para false
-    base_frame_id: "base_link"
-    scan_topic: scan
-    map_topic: map
-    set_initial_pose: true
-    always_reset_initial_pose: true
-    first_map_only: false
-    initial_pose:
-      x: 0.0
-      y: 0.0
-      z: 0.0
-      yaw: 0.0
-    
+/home/vfran/billeagle_ws/bill_ws/src/bill_slam/config/amcl.config.yaml

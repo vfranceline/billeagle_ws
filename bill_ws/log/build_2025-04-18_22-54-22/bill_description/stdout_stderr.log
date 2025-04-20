@@ -1,0 +1,51 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/vfran/billeagle_ws/bill_ws/build/bill_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/gazebo.launch.py
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/launch_sim.launch.py
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/robot.launch.py
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/rsp.launch.py
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/rviz.launch.py
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/common.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/gazebo_control.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/lidar.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot.urdf.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot_core.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/ros2_control.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/bill.urdf.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/bill_core.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/inertial_macros.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/lidar.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/ros2_control.xacro
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/bot.rviz
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/config.rviz
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/nav.config.rviz
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim.config.rviz
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim_map.config.rviz
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/gazebo_params.yaml
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/my_controller.yaml
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/twist_mux_params.yaml
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/package_run_dependencies/bill_description
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/parent_prefix_path/bill_description
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.sh
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.dsv
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.sh
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.dsv
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.bash
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.sh
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.zsh
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.dsv
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.dsv
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/packages/bill_description
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig.cmake
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig-version.cmake
+-- Symlinking: /home/vfran/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.xml
