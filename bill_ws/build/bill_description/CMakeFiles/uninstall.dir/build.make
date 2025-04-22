@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /usr/local/bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /usr/local/bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vfran/billeagle_ws/bill_ws/src/bill_description
+CMAKE_SOURCE_DIR = /home/vic/billeagle_ws/bill_ws/src/bill_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vfran/billeagle_ws/bill_ws/build/bill_description
+CMAKE_BINARY_DIR = /home/vic/billeagle_ws/bill_ws/build/bill_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/vfran/billeagle_ws/bill_ws/build/bill_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vfran/billeagle_ws/bill_ws/src/bill_description /home/vfran/billeagle_ws/bill_ws/src/bill_description /home/vfran/billeagle_ws/bill_ws/build/bill_description /home/vfran/billeagle_ws/bill_ws/build/bill_description /home/vfran/billeagle_ws/bill_ws/build/bill_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/vic/billeagle_ws/bill_ws/build/bill_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vic/billeagle_ws/bill_ws/src/bill_description /home/vic/billeagle_ws/bill_ws/src/bill_description /home/vic/billeagle_ws/bill_ws/build/bill_description /home/vic/billeagle_ws/bill_ws/build/bill_description /home/vic/billeagle_ws/bill_ws/build/bill_description/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

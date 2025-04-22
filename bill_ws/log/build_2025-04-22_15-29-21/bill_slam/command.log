@@ -1,0 +1,4 @@
+Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_slam -- -j8 -l8
+Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_slam -- -j8 -l8
+Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_slam
+Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_slam

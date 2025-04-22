@@ -1,1 +1,1 @@
-gazebo_ros:robot_state_publisher:rviz
+controller_manager:gazebo_ros:gazebo_ros2_control:hardware_interface:joint_state_broadcaster:mecanum_drive_controller:pluginlib:robot_state_publisher:ros2_control:ros2_controllers:rviz

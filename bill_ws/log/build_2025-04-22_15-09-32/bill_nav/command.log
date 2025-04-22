@@ -1,0 +1,6 @@
+Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vic/billeagle_ws/bill_ws/src/bill_nav -DCMAKE_INSTALL_PREFIX=/home/vic/billeagle_ws/bill_ws/install/bill_nav
+Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/vic/billeagle_ws/bill_ws/src/bill_nav -DCMAKE_INSTALL_PREFIX=/home/vic/billeagle_ws/bill_ws/install/bill_nav
+Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_nav -- -j8 -l8
+Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_nav -- -j8 -l8
+Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_nav
+Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_nav' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_nav

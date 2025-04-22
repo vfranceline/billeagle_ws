@@ -1,0 +1,50 @@
+[0.019s] Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_description -- -j8 -l8
+[0.060s] Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/vic/billeagle_ws/bill_ws/build/bill_description -- -j8 -l8
+[0.093s] Invoking command in '/home/vic/billeagle_ws/bill_ws/build/bill_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_description
+[0.101s] -- Install configuration: ""
+[0.104s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch
+[0.105s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/rsp.launch.py
+[0.105s] -- Installing: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/simulado.launch.py
+[0.105s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/launch_sim.launch.py
+[0.105s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/robot.launch.py
+[0.105s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/launch/rviz.launch.py
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot.urdf.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/gazebo_control.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/common.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/robot_core.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/ros2_control.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/description/lidar.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/bill.urdf.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/ros2_control.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/lidar.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/models/myBill/inertial_macros.xacro
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim.config.rviz
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/config.rviz
+[0.106s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/nav.config.rviz
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/bot.rviz
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/rviz/sim_map.config.rviz
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/gazebo_params.yaml
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/twist_mux_params.yaml
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/bill_control.yaml
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/config/my_controller.yaml
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/package_run_dependencies/bill_description
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/parent_prefix_path/bill_description
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.sh
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/ament_prefix_path.dsv
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.sh
+[0.107s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/environment/path.dsv
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.bash
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.sh
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.zsh
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/local_setup.dsv
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.dsv
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/ament_index/resource_index/packages/bill_description
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig.cmake
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/cmake/bill_descriptionConfig-version.cmake
+[0.108s] -- Up-to-date: /home/vic/billeagle_ws/bill_ws/install/bill_description/share/bill_description/package.xml
+[0.127s] Invoked command in '/home/vic/billeagle_ws/bill_ws/build/bill_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/vic/billeagle_ws/bill_ws/build/bill_description
