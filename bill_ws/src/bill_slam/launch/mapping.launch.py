@@ -33,7 +33,7 @@ def generate_launch_description():
     
     use_saved_map_arg = DeclareLaunchArgument(
         'use_saved_map',
-        default_value='true',
+        default_value='false',
         description='Whether to use a saved map or not'
     )
 
