@@ -19,7 +19,7 @@ def generate_launch_description():
 
     map_file_arg = DeclareLaunchArgument(
         "map_file",
-        default_value=PathJoinSubstitution([FindPackageShare("bill_slam"), "mapas", "mapa_athome_save.yaml"]),
+        default_value=PathJoinSubstitution([FindPackageShare("bill_slam"), "mapas", "ROBOCUP2025_save.yaml"]),
         description="Full path to the yaml map file",
     )
 
@@ -31,12 +31,12 @@ def generate_launch_description():
         description="Full path to the ROS2 parameters file to use for the amcl node",
     )
 
-    map_server_node = Node(
-        package="nav2_map_server",
-        executable="map_server",
-        name="map_server",
-        parameters=[{"use_sim_time": use_sim_time, "yaml_filename": map_file}],
-    )
+    # map_server_node = Node(
+    #     package="nav2_map_server",
+    #     executable="map_server",
+    #     name="map_server",
+    #     parameters=[{"use_sim_time": use_sim_time, "yaml_filename": map_file}],
+    # )
 
     amcl_node = Node(
         package="nav2_amcl",
@@ -45,16 +45,16 @@ def generate_launch_description():
         parameters=[amcl_params_file, {"use_sim_time": use_sim_time}],
     )
 
-    nav_manager = Node(
-        package="nav2_lifecycle_manager",
-        executable="lifecycle_manager",
-        name="nav_manager",
-        parameters=[
-            {"use_sim_time": use_sim_time},
-            {"autostart": True},
-            {"node_names": ["map_server", "amcl"]},
-        ],
-    )
+    # nav_manager = Node(
+    #     package="nav2_lifecycle_manager",
+    #     executable="lifecycle_manager",
+    #     name="nav_manager",
+    #     parameters=[
+    #         {"use_sim_time": use_sim_time},
+    #         {"autostart": True},
+    #         {"node_names": ["map_server", "amcl"]},
+    #     ],
+    # )
     
     slam_params_file_arg = DeclareLaunchArgument(
         'slam_params_file',
@@ -67,7 +67,7 @@ def generate_launch_description():
     
     
     default_map_path = PathJoinSubstitution(
-        [FindPackageShare("bill_slam"), 'mapas', 'mapa_athome_serial']
+        [FindPackageShare("bill_slam"), 'mapas', 'ROBOCUP2025_serial']
     )
     
     # saved_map_path_arg = DeclareLaunchArgument(     
@@ -88,9 +88,9 @@ def generate_launch_description():
             amcl_params_file_arg,
             map_file_arg,
             slam_params_file_arg,
-            map_server_node,
+            # map_server_node,
             amcl_node,
-            nav_manager,
+            # nav_manager,
             slam_node_saved_map,
             # saved_map_path_arg
         ]
