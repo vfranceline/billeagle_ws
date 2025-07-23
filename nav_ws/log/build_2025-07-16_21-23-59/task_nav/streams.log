@@ -1,0 +1,65 @@
+[0.355s] Invoking command in '/home/bill7/billeagle_ws/nav_ws/src/task_nav': PYTHONPATH=/home/bill7/billeagle_ws/nav_ws/build/task_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_nav build --build-base /home/bill7/billeagle_ws/nav_ws/build/task_nav/build install --record /home/bill7/billeagle_ws/nav_ws/build/task_nav/install.log --single-version-externally-managed install_data
+[0.485s] running egg_info
+[0.485s] creating ../../build/task_nav/task_nav.egg-info
+[0.485s] writing ../../build/task_nav/task_nav.egg-info/PKG-INFO
+[0.485s] writing dependency_links to ../../build/task_nav/task_nav.egg-info/dependency_links.txt
+[0.485s] writing entry points to ../../build/task_nav/task_nav.egg-info/entry_points.txt
+[0.485s] writing requirements to ../../build/task_nav/task_nav.egg-info/requires.txt
+[0.485s] writing top-level names to ../../build/task_nav/task_nav.egg-info/top_level.txt
+[0.485s] writing manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+[0.486s] reading manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+[0.487s] writing manifest file '../../build/task_nav/task_nav.egg-info/SOURCES.txt'
+[0.487s] running build
+[0.487s] running build_py
+[0.487s] creating /home/bill7/billeagle_ws/nav_ws/build/task_nav/build
+[0.487s] creating /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib
+[0.487s] creating /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/goal_pose.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/__init__.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/object_avoidance.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/mecanum_drive.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/init_pose.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/fake_node.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/turn_around.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/inspection.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] copying task_nav/pub_turn_around.py -> /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav
+[0.487s] running install
+[0.487s] running install_lib
+[0.488s] creating /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.488s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/goal_pose.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.488s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/__init__.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.488s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/object_avoidance.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.488s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/mecanum_drive.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.488s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/init_pose.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.489s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/fake_node.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.489s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/turn_around.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.489s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/inspection.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.489s] copying /home/bill7/billeagle_ws/nav_ws/build/task_nav/build/lib/task_nav/pub_turn_around.py -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav
+[0.489s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/goal_pose.py to goal_pose.cpython-310.pyc
+[0.489s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/__init__.py to __init__.cpython-310.pyc
+[0.489s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/object_avoidance.py to object_avoidance.cpython-310.pyc
+[0.489s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/mecanum_drive.py to mecanum_drive.cpython-310.pyc
+[0.490s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/init_pose.py to init_pose.cpython-310.pyc
+[0.490s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/fake_node.py to fake_node.cpython-310.pyc
+[0.491s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/turn_around.py to turn_around.cpython-310.pyc
+[0.491s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/inspection.py to inspection.cpython-310.pyc
+[0.491s] byte-compiling /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav/pub_turn_around.py to pub_turn_around.cpython-310.pyc
+[0.491s] running install_data
+[0.491s] creating /home/bill7/billeagle_ws/nav_ws/install/task_nav/share/ament_index
+[0.491s] creating /home/bill7/billeagle_ws/nav_ws/install/task_nav/share/ament_index/resource_index
+[0.492s] creating /home/bill7/billeagle_ws/nav_ws/install/task_nav/share/ament_index/resource_index/packages
+[0.492s] copying resource/task_nav -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/share/ament_index/resource_index/packages
+[0.492s] copying package.xml -> /home/bill7/billeagle_ws/nav_ws/install/task_nav/share/task_nav
+[0.492s] running install_egg_info
+[0.493s] Copying ../../build/task_nav/task_nav.egg-info to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages/task_nav-0.0.0-py3.10.egg-info
+[0.493s] running install_scripts
+[0.505s] Installing fake_node script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing goal_pose script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing init_pose script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing inspection_routine script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing mecanum_drive script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing object_avoidance script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing pub_turned script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.505s] Installing turn_around script to /home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/task_nav
+[0.506s] writing list of installed files to '/home/bill7/billeagle_ws/nav_ws/build/task_nav/install.log'
+[0.520s] Invoked command in '/home/bill7/billeagle_ws/nav_ws/src/task_nav' returned '0': PYTHONPATH=/home/bill7/billeagle_ws/nav_ws/build/task_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/bill7/billeagle_ws/nav_ws/install/task_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/task_nav build --build-base /home/bill7/billeagle_ws/nav_ws/build/task_nav/build install --record /home/bill7/billeagle_ws/nav_ws/build/task_nav/install.log --single-version-externally-managed install_data

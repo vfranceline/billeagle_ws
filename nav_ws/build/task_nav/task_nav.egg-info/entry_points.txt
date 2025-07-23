@@ -1,0 +1,10 @@
+[console_scripts]
+fake_node = task_nav.fake_node:main
+goal_pose = task_nav.goal_pose:main
+init_pose = task_nav.init_pose:main
+inspection_routine = task_nav.inspection:main
+mecanum_drive = task_nav.mecanum_drive:main
+object_avoidance = task_nav.object_avoidance:main
+pub_turned = task_nav.pub_turn_around:main
+turn_around = task_nav.turn_around:main
+

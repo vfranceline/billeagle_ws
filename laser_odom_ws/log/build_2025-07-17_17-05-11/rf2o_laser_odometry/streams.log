@@ -1,0 +1,74 @@
+[0.005s] Invoking command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake /home/bill7/billeagle_ws/laser_odom_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry
+[0.052s] -- The C compiler identification is GNU 11.4.0
+[0.089s] -- The CXX compiler identification is GNU 11.4.0
+[0.094s] -- Detecting C compiler ABI info
+[0.142s] -- Detecting C compiler ABI info - done
+[0.146s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.146s] -- Detecting C compile features
+[0.146s] -- Detecting C compile features - done
+[0.148s] -- Detecting CXX compiler ABI info
+[0.201s] -- Detecting CXX compiler ABI info - done
+[0.205s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.206s] -- Detecting CXX compile features
+[0.206s] -- Detecting CXX compile features - done
+[0.207s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.426s] -- Found Python3: /home/bill7/miniconda3/envs/bill/bin/python3 (found version "3.10.18") found components: Interpreter 
+[0.491s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.530s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.535s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.541s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.559s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.570s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.602s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.604s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.687s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.706s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.734s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.743s] -- Looking for pthread.h
+[0.808s] -- Looking for pthread.h - found
+[0.808s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.873s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.874s] -- Found Threads: TRUE  
+[0.913s] -- Found geometry_msgs: 4.8.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.923s] -- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[0.936s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.937s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[0.937s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.018s] -- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.038s] -- Found nav_msgs: 4.8.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.055s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[1.117s] -- Configuring done
+[1.126s] -- Generating done
+[1.130s] -- Build files have been written to: /home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry
+[1.138s] Invoked command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake /home/bill7/billeagle_ws/laser_odom_ws/src/rf2o_laser_odometry -DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry
+[1.139s] Invoking command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --build /home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry -- -j16 -l16
+[1.176s] [ 20%] [32mBuilding CXX object CMakeFiles/rf2o_laser_odometry.dir/src/CLaserOdometry2D.cpp.o[0m
+[1.177s] [ 60%] [32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2D.cpp.o[0m
+[1.177s] [ 60%] [32mBuilding CXX object CMakeFiles/rf2o_laser_odometry_node.dir/src/CLaserOdometry2DNode.cpp.o[0m
+[13.558s] [ 80%] [32m[1mLinking CXX static library librf2o_laser_odometry.a[0m
+[13.582s] [100%] [32m[1mLinking CXX executable rf2o_laser_odometry_node[0m
+[13.801s] [100%] Built target rf2o_laser_odometry
+[14.269s] [100%] Built target rf2o_laser_odometry_node
+[14.280s] Invoked command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --build /home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry -- -j16 -l16
+[14.287s] Invoking command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --install /home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry
+[14.292s] -- Install configuration: ""
+[14.292s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node
+[14.298s] -- Set runtime path of "/home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/lib/rf2o_laser_odometry/rf2o_laser_odometry_node" to ""
+[14.298s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch
+[14.298s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/launch/rf2o_laser_odometry.launch.py
+[14.298s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/package_run_dependencies/rf2o_laser_odometry
+[14.298s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/parent_prefix_path/rf2o_laser_odometry
+[14.298s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.sh
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/ament_prefix_path.dsv
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.sh
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/environment/path.dsv
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.bash
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.sh
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.zsh
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/local_setup.dsv
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.dsv
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/ament_index/resource_index/packages/rf2o_laser_odometry
+[14.299s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig.cmake
+[14.300s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/cmake/rf2o_laser_odometryConfig-version.cmake
+[14.300s] -- Installing: /home/bill7/billeagle_ws/laser_odom_ws/install/rf2o_laser_odometry/share/rf2o_laser_odometry/package.xml
+[14.300s] Invoked command in '/home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --install /home/bill7/billeagle_ws/laser_odom_ws/build/rf2o_laser_odometry

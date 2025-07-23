@@ -1,0 +1,765 @@
+[0.000000] (-) TimerEvent: {}
+[0.000473] (lslidar_msgs) JobQueued: {'identifier': 'lslidar_msgs', 'dependencies': OrderedDict()}
+[0.000576] (lslidar_driver) JobQueued: {'identifier': 'lslidar_driver', 'dependencies': OrderedDict([('lslidar_msgs', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs')])}
+[0.000601] (lslidar_msgs) JobStarted: {'identifier': 'lslidar_msgs'}
+[0.004741] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'cmake'}
+[0.005052] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/bill7/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_msgs', '-DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.046594] (lslidar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.081187] (lslidar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.085780] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.099896] (-) TimerEvent: {}
+[0.136987] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.141323] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.141483] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.141579] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.143312] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.198184] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.200142] (-) TimerEvent: {}
+[0.202391] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.202578] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.202781] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.204240] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300376] (-) TimerEvent: {}
+[0.400663] (-) TimerEvent: {}
+[0.432503] (lslidar_msgs) StdoutLine: {'line': b'-- Found Python3: /home/bill7/miniconda3/envs/bill/bin/python3 (found version "3.10.18") found components: Interpreter \n'}
+[0.488196] (lslidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.8.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.500822] (-) TimerEvent: {}
+[0.506875] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.509569] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.513984] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.520383] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.529068] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.543368] (lslidar_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 4.8.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.569062] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.574788] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.601012] (-) TimerEvent: {}
+[0.701321] (-) TimerEvent: {}
+[0.783731] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.801484] (-) TimerEvent: {}
+[0.901705] (-) TimerEvent: {}
+[1.002038] (-) TimerEvent: {}
+[1.020099] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.102147] (-) TimerEvent: {}
+[1.102528] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.115217] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /home/bill7/miniconda3/envs/bill/bin/python3 (found suitable version "3.10.18", minimum required is "3.6") \n'}
+[1.116208] (lslidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.132937] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /home/bill7/miniconda3/envs/bill/lib/libpython3.10.so (found suitable version "3.10.18", minimum required is "3.5") \n'}
+[1.133074] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/bill7/miniconda3/envs/bill/bin/python3\n'}
+[1.133107] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /home/bill7/miniconda3/envs/bill/include/python3.10\n'}
+[1.133134] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /home/bill7/miniconda3/envs/bill/lib/libpython3.10.so\n'}
+[1.143459] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.202233] (-) TimerEvent: {}
+[1.302453] (-) TimerEvent: {}
+[1.325410] (lslidar_msgs) StdoutLine: {'line': b'-- Using numpy include directory: /home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages/numpy/core/include\n'}
+[1.331935] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.333210] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.333602] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.339919] (lslidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.355605] (lslidar_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:166 (add_library):\n'}
+[1.355765] (lslidar_msgs) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.355831] (lslidar_msgs) StderrLine: {'line': b'  lslidar_msgs__rosidl_generator_py because files in some directories may\n'}
+[1.355889] (lslidar_msgs) StderrLine: {'line': b'  conflict with libraries in implicit directories:\n'}
+[1.355945] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.356008] (lslidar_msgs) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.356066] (lslidar_msgs) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[1.356121] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.356174] (lslidar_msgs) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.356228] (lslidar_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.356282] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.356343] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.356398] (lslidar_msgs) StderrLine: {'line': b'  CMakeLists.txt:30 (rosidl_generate_interfaces)\n'}
+[1.356452] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.356506] (lslidar_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.356932] (lslidar_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.357243] (lslidar_msgs) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.357290] (lslidar_msgs) StderrLine: {'line': b'  lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext because files in some\n'}
+[1.357316] (lslidar_msgs) StderrLine: {'line': b'  directories may conflict with libraries in implicit directories:\n'}
+[1.357339] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.357361] (lslidar_msgs) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.357384] (lslidar_msgs) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[1.357406] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.357429] (lslidar_msgs) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.357451] (lslidar_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.357472] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.357498] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.357520] (lslidar_msgs) StderrLine: {'line': b'  CMakeLists.txt:30 (rosidl_generate_interfaces)\n'}
+[1.357541] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.357562] (lslidar_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.359052] (lslidar_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.359122] (lslidar_msgs) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.359152] (lslidar_msgs) StderrLine: {'line': b'  lslidar_msgs__rosidl_typesupport_introspection_c__pyext because files in\n'}
+[1.359176] (lslidar_msgs) StderrLine: {'line': b'  some directories may conflict with libraries in implicit directories:\n'}
+[1.359198] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.359220] (lslidar_msgs) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.359241] (lslidar_msgs) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[1.359262] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.359283] (lslidar_msgs) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.359304] (lslidar_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.359325] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.359347] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.359368] (lslidar_msgs) StderrLine: {'line': b'  CMakeLists.txt:30 (rosidl_generate_interfaces)\n'}
+[1.359389] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.359409] (lslidar_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.361415] (lslidar_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:226 (add_library):\n'}
+[1.361481] (lslidar_msgs) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target\n'}
+[1.361510] (lslidar_msgs) StderrLine: {'line': b'  lslidar_msgs__rosidl_typesupport_c__pyext because files in some directories\n'}
+[1.361533] (lslidar_msgs) StderrLine: {'line': b'  may conflict with libraries in implicit directories:\n'}
+[1.361556] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.361579] (lslidar_msgs) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[1.361602] (lslidar_msgs) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[1.361627] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.361648] (lslidar_msgs) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[1.361669] (lslidar_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.361690] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[1.361710] (lslidar_msgs) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[1.361731] (lslidar_msgs) StderrLine: {'line': b'  CMakeLists.txt:30 (rosidl_generate_interfaces)\n'}
+[1.361750] (lslidar_msgs) StderrLine: {'line': b'\n'}
+[1.361770] (lslidar_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[1.367211] (lslidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.376822] (lslidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs\n'}
+[1.382729] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[1.383275] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'build'}
+[1.384080] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs', '--', '-j16', '-l16'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.402577] (-) TimerEvent: {}
+[1.414566] (lslidar_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.421406] (lslidar_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.428803] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_copy_lslidar_msgs\n'}
+[1.502810] (-) TimerEvent: {}
+[1.540066] (lslidar_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[1.545688] (lslidar_msgs) StdoutLine: {'line': b'creating lslidar_msgs.egg-info\n'}
+[1.545842] (lslidar_msgs) StdoutLine: {'line': b'writing lslidar_msgs.egg-info/PKG-INFO\n'}
+[1.545990] (lslidar_msgs) StdoutLine: {'line': b'writing dependency_links to lslidar_msgs.egg-info/dependency_links.txt\n'}
+[1.546081] (lslidar_msgs) StdoutLine: {'line': b'writing top-level names to lslidar_msgs.egg-info/top_level.txt\n'}
+[1.546145] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[1.562103] (lslidar_msgs) StdoutLine: {'line': b"reading manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[1.562600] (lslidar_msgs) StdoutLine: {'line': b"writing manifest file 'lslidar_msgs.egg-info/SOURCES.txt'\n"}
+[1.582941] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_build_lslidar_msgs_egg\n'}
+[1.602951] (-) TimerEvent: {}
+[1.703273] (-) TimerEvent: {}
+[1.719308] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target lslidar_msgs__cpp\n'}
+[1.725846] (lslidar_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.727437] (lslidar_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.727626] (lslidar_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_point__functions.c.o\x1b[0m\n'}
+[1.727951] (lslidar_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_sweep__functions.c.o\x1b[0m\n'}
+[1.728100] (lslidar_msgs) StdoutLine: {'line': b'[ 11%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.730110] (lslidar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_difop__functions.c.o\x1b[0m\n'}
+[1.730322] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_scan__functions.c.o\x1b[0m\n'}
+[1.730404] (lslidar_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_packet__functions.c.o\x1b[0m\n'}
+[1.773820] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.803429] (-) TimerEvent: {}
+[1.803761] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] Built target lslidar_msgs__rosidl_generator_c\n'}
+[1.812814] (lslidar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.813132] (lslidar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.813269] (lslidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.903573] (-) TimerEvent: {}
+[1.952433] (lslidar_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[1.954008] (lslidar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[1.954233] (lslidar_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[1.955135] (lslidar_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[1.955559] (lslidar_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[1.991570] (lslidar_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[1.991743] (lslidar_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[1.992505] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[1.992668] (lslidar_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[1.995131] (lslidar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[2.004104] (-) TimerEvent: {}
+[2.006608] (lslidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[2.006772] (lslidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[2.006919] (lslidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[2.104212] (-) TimerEvent: {}
+[2.158913] (lslidar_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[2.178633] (lslidar_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[2.189280] (lslidar_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[2.207007] (-) TimerEvent: {}
+[2.209938] (lslidar_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[2.217317] (lslidar_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[2.232908] (lslidar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[2.237799] (lslidar_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[2.269028] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.269257] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.277182] (lslidar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_difop__type_support.c.o\x1b[0m\n'}
+[2.277418] (lslidar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_packet__type_support.c.o\x1b[0m\n'}
+[2.277541] (lslidar_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_point__type_support.c.o\x1b[0m\n'}
+[2.310060] (-) TimerEvent: {}
+[2.311530] (lslidar_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_scan__type_support.c.o\x1b[0m\n'}
+[2.312845] (lslidar_msgs) StdoutLine: {'line': b'[ 63%] Built target lslidar_msgs__rosidl_typesupport_cpp\n'}
+[2.317085] (lslidar_msgs) StdoutLine: {'line': b'[ 63%] Built target lslidar_msgs__rosidl_typesupport_c\n'}
+[2.319850] (lslidar_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c.o\x1b[0m\n'}
+[2.336598] (lslidar_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support_c.cpp.o\x1b[0m\n'}
+[2.336823] (lslidar_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_packet__type_support_c.cpp.o\x1b[0m\n'}
+[2.336901] (lslidar_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_point__type_support_c.cpp.o\x1b[0m\n'}
+[2.336955] (lslidar_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_difop__type_support_c.cpp.o\x1b[0m\n'}
+[2.342100] (lslidar_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_scan__type_support_c.cpp.o\x1b[0m\n'}
+[2.363178] (lslidar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.390835] (lslidar_msgs) StdoutLine: {'line': b'[ 74%] Built target lslidar_msgs__rosidl_typesupport_introspection_c\n'}
+[2.410167] (-) TimerEvent: {}
+[2.475066] (lslidar_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.510270] (-) TimerEvent: {}
+[2.551722] (lslidar_msgs) StdoutLine: {'line': b'[ 76%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.587412] (lslidar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.610447] (-) TimerEvent: {}
+[2.617902] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.636631] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.671412] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.687609] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs\n'}
+[2.703059] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.710542] (-) TimerEvent: {}
+[2.810820] (-) TimerEvent: {}
+[2.911176] (-) TimerEvent: {}
+[3.011509] (-) TimerEvent: {}
+[3.111772] (-) TimerEvent: {}
+[3.112679] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] Built target lslidar_msgs__py\n'}
+[3.129102] (lslidar_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_sweep_s.c.o\x1b[0m\n'}
+[3.130112] (lslidar_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_difop_s.c.o\x1b[0m\n'}
+[3.130569] (lslidar_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_packet_s.c.o\x1b[0m\n'}
+[3.130635] (lslidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_scan_s.c.o\x1b[0m\n'}
+[3.130700] (lslidar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_py.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_point_s.c.o\x1b[0m\n'}
+[3.209621] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[3.211942] (-) TimerEvent: {}
+[3.242956] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] Built target lslidar_msgs__rosidl_generator_py\n'}
+[3.258948] (lslidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.260606] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[3.260683] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.312186] (-) TimerEvent: {}
+[3.322285] (lslidar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.324435] (lslidar_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.328670] (lslidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.350342] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext\n'}
+[3.353603] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.358434] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.367634] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[3.368158] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'install'}
+[3.373001] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages:'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.379445] (lslidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.379663] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs\n'}
+[3.379753] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.379834] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.379913] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.h\n'}
+[3.380112] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.380272] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h\n'}
+[3.380381] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.h\n'}
+[3.380461] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.h\n'}
+[3.380540] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.h\n'}
+[3.380619] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.c\n'}
+[3.380698] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__functions.c\n'}
+[3.380776] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.h\n'}
+[3.380854] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.h\n'}
+[3.380932] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.h\n'}
+[3.381091] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.c\n'}
+[3.381172] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__functions.c\n'}
+[3.381265] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__functions.h\n'}
+[3.381344] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.h\n'}
+[3.381421] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__functions.c\n'}
+[3.381499] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__functions.h\n'}
+[3.381577] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.h\n'}
+[3.381673] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.h\n'}
+[3.381751] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.h\n'}
+[3.381829] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.h\n'}
+[3.381907] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.h\n'}
+[3.381990] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.h\n'}
+[3.382174] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.h\n'}
+[3.382295] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.382375] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.h\n'}
+[3.382453] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.h\n'}
+[3.382531] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh\n'}
+[3.382608] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv\n'}
+[3.382685] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so\n'}
+[3.382805] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so" to ""\n'}
+[3.382884] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.382961] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.383101] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.383197] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h\n'}
+[3.383276] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h\n'}
+[3.383354] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[3.383432] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h\n'}
+[3.383510] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[3.383588] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.383667] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.383745] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.383824] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.383901] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.383985] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_scan.hpp\n'}
+[3.384137] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_point.hpp\n'}
+[3.384215] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.384293] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp\n'}
+[3.384371] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp\n'}
+[3.384483] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__builder.hpp\n'}
+[3.384562] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.hpp\n'}
+[3.384640] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp\n'}
+[3.384718] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.hpp\n'}
+[3.384795] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp\n'}
+[3.384920] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp\n'}
+[3.385057] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp\n'}
+[3.385109] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__struct.hpp\n'}
+[3.385140] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp\n'}
+[3.385187] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__traits.hpp\n'}
+[3.385215] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp\n'}
+[3.385242] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp\n'}
+[3.385269] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.hpp\n'}
+[3.385294] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.hpp\n'}
+[3.385319] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp\n'}
+[3.385344] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp\n'}
+[3.385368] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.hpp\n'}
+[3.385412] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp\n'}
+[3.385439] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_packet.hpp\n'}
+[3.385465] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.385491] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_difop.hpp\n'}
+[3.385517] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/lslidar_sweep.hpp\n'}
+[3.385542] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.385567] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.385592] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.385617] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.385641] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.385666] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.385693] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.385718] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/dds_fastrtps\n'}
+[3.385742] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.385765] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.385787] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.385810] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.385835] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.385858] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.385883] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.385906] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.c\n'}
+[3.385929] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.c\n'}
+[3.385954] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.c\n'}
+[3.385995] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.c\n'}
+[3.386019] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h\n'}
+[3.386042] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h\n'}
+[3.386066] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h\n'}
+[3.386091] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[3.386117] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h\n'}
+[3.386142] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c\n'}
+[3.386166] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.386191] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[3.386215] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.386239] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so\n'}
+[3.386263] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[3.386287] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs\n'}
+[3.386311] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg\n'}
+[3.386334] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail\n'}
+[3.386358] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.386382] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.386441] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp\n'}
+[3.386466] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp\n'}
+[3.386499] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.386521] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp\n'}
+[3.386544] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.386568] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp\n'}
+[3.386590] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp\n'}
+[3.386612] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/include/lslidar_msgs/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.386633] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[3.386654] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.386676] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so\n'}
+[3.386698] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[3.386720] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh\n'}
+[3.386742] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv\n'}
+[3.386763] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs-1.2.0-py3.10.egg-info\n'}
+[3.386785] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs-1.2.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.386807] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs-1.2.0-py3.10.egg-info/PKG-INFO\n'}
+[3.386829] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs-1.2.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.386851] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs-1.2.0-py3.10.egg-info/top_level.txt\n'}
+[3.386873] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs\n'}
+[3.386895] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.386916] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/__init__.py\n'}
+[3.386939] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.386963] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg\n'}
+[3.386994] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_point_s.c\n'}
+[3.387018] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/__init__.py\n'}
+[3.387041] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_packet_s.c\n'}
+[3.387063] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_sweep.py\n'}
+[3.387086] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_difop.py\n'}
+[3.387109] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_point.py\n'}
+[3.387131] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_scan.py\n'}
+[3.387153] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_sweep_s.c\n'}
+[3.387177] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_scan_s.c\n'}
+[3.387199] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_difop_s.c\n'}
+[3.387222] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_packet.py\n'}
+[3.387244] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.387267] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[3.387289] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/liblslidar_msgs__rosidl_generator_py.so\n'}
+[3.387311] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.387334] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.409590] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs'...\n"}
+[3.409700] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/__init__.py'...\n"}
+[3.409732] (lslidar_msgs) StdoutLine: {'line': b"Listing '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg'...\n"}
+[3.409756] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/__init__.py'...\n"}
+[3.409789] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_difop.py'...\n"}
+[3.409812] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_packet.py'...\n"}
+[3.409833] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_point.py'...\n"}
+[3.409855] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_scan.py'...\n"}
+[3.409876] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/msg/_lslidar_sweep.py'...\n"}
+[3.412228] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.412298] (-) TimerEvent: {}
+[3.412359] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.412582] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.412646] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.412776] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[3.412841] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[3.412878] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so\n'}
+[3.413031] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_py.so" to ""\n'}
+[3.413103] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl\n'}
+[3.413137] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl\n'}
+[3.413162] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl\n'}
+[3.413279] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl\n'}
+[3.413347] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl\n'}
+[3.413389] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg\n'}
+[3.413417] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg\n'}
+[3.413455] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg\n'}
+[3.413481] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg\n'}
+[3.413506] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg\n'}
+[3.413531] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs\n'}
+[3.413557] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs\n'}
+[3.413582] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh\n'}
+[3.413628] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv\n'}
+[3.413662] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh\n'}
+[3.413688] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv\n'}
+[3.413713] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash\n'}
+[3.413768] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh\n'}
+[3.413803] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh\n'}
+[3.413829] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv\n'}
+[3.413869] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/package.dsv\n'}
+[3.413896] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs\n'}
+[3.413935] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport.cmake\n'}
+[3.413960] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.414008] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.414042] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.414093] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[3.414142] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.414190] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.414240] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.414285] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.414335] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[3.414380] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.414430] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.414475] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.414525] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[3.414570] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.414621] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport.cmake\n'}
+[3.414668] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/export_lslidar_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.414713] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[3.414757] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.414805] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.414848] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.414894] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.414937] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.414984] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.415030] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake\n'}
+[3.415067] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake\n'}
+[3.415111] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/package.xml\n'}
+[3.416820] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[3.430385] (lslidar_msgs) JobEnded: {'identifier': 'lslidar_msgs', 'rc': 0}
+[3.430963] (lslidar_driver) JobStarted: {'identifier': 'lslidar_driver'}
+[3.436039] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'cmake'}
+[3.436319] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/bill7/billeagle_ws/lslidar_ws/src/LSLIDAR_M10_N10_V2.5.2_230110_ROS2/lslidar_driver', '-DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble')]), 'shell': False}
+[3.476796] (lslidar_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.511270] (lslidar_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[3.512402] (-) TimerEvent: {}
+[3.515876] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.566443] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.573279] (lslidar_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.573398] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.573613] (lslidar_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.575476] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.612604] (-) TimerEvent: {}
+[3.631489] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.637799] (lslidar_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.637877] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.638515] (lslidar_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.712805] (-) TimerEvent: {}
+[3.753080] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[3.754288] (lslidar_driver) StdoutLine: {'line': b'-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[3.812989] (-) TimerEvent: {}
+[3.913346] (-) TimerEvent: {}
+[3.962875] (lslidar_driver) StdoutLine: {'line': b'-- Found Python3: /home/bill7/miniconda3/envs/bill/bin/python3 (found version "3.10.18") found components: Interpreter \n'}
+[4.013531] (-) TimerEvent: {}
+[4.044348] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.047221] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.051877] (lslidar_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.058494] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.067454] (lslidar_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.091378] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.092843] (lslidar_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.113694] (-) TimerEvent: {}
+[4.153019] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.178070] (lslidar_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.207278] (lslidar_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.213386] (lslidar_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.213788] (-) TimerEvent: {}
+[4.259490] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[4.270001] (lslidar_driver) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[4.294935] (lslidar_driver) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[4.295072] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[4.307437] (lslidar_driver) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[4.313959] (-) TimerEvent: {}
+[4.317059] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[4.327852] (lslidar_driver) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[4.360087] (lslidar_driver) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[4.360213] (lslidar_driver) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[4.396063] (lslidar_driver) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[4.399631] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[4.414149] (-) TimerEvent: {}
+[4.514354] (-) TimerEvent: {}
+[4.541999] (lslidar_driver) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[4.542254] (lslidar_driver) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[4.544793] (lslidar_driver) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[4.550481] (lslidar_driver) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[4.560897] (lslidar_driver) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[4.575418] (lslidar_driver) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[4.614547] (-) TimerEvent: {}
+[4.657280] (lslidar_driver) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[4.658140] (lslidar_driver) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[4.711300] (lslidar_driver) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[4.711425] (lslidar_driver) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[4.714641] (-) TimerEvent: {}
+[4.764847] (lslidar_driver) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[4.764967] (lslidar_driver) StdoutLine: {'line': b'-- Looking for connect\n'}
+[4.814782] (-) TimerEvent: {}
+[4.816131] (lslidar_driver) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[4.816233] (lslidar_driver) StdoutLine: {'line': b'-- Looking for remove\n'}
+[4.866708] (lslidar_driver) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[4.866831] (lslidar_driver) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[4.914982] (-) TimerEvent: {}
+[4.917367] (lslidar_driver) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[4.917483] (lslidar_driver) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[4.966572] (lslidar_driver) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[5.015184] (-) TimerEvent: {}
+[5.027554] (lslidar_driver) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[5.029133] (lslidar_driver) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[5.030601] (lslidar_driver) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[5.031862] (lslidar_driver) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[5.048665] (lslidar_driver) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[5.052640] (lslidar_driver) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[5.055155] (lslidar_driver) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[5.059717] (lslidar_driver) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[5.115375] (-) TimerEvent: {}
+[5.120067] (lslidar_driver) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[5.130404] (lslidar_driver) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[5.158295] (lslidar_driver) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[5.159184] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[5.159299] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.201884] (lslidar_driver) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[5.202162] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.202374] (lslidar_driver) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[5.215591] (-) TimerEvent: {}
+[5.300000] (lslidar_driver) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[5.305073] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.309977] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[5.315733] (-) TimerEvent: {}
+[5.407996] (lslidar_driver) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[5.415894] (-) TimerEvent: {}
+[5.499808] (lslidar_driver) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[5.516065] (-) TimerEvent: {}
+[5.586379] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[5.586885] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[5.587170] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[5.596236] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[5.596362] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[5.596755] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[5.596944] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[5.597797] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[5.597869] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[5.598389] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[5.598456] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[5.598939] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[5.599107] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[5.599149] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[5.599177] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[5.599308] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[5.599371] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[5.599868] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[5.599932] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[5.600432] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[5.600500] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[5.600980] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[5.601044] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[5.601594] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[5.601661] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[5.602151] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[5.602221] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[5.602757] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[5.602828] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[5.603271] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[5.603455] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[5.603890] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[5.603925] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[5.604524] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[5.604593] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[5.605102] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[5.605306] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[5.605654] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[5.605737] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_APPS\n'}
+[5.606177] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[5.606611] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_IN_HAND_SCANNER\n'}
+[5.606682] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[5.606746] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_MODELER\n'}
+[5.606896] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[5.606958] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_POINT_CLOUD_EDITOR\n'}
+[5.607421] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[5.607475] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[5.608026] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[5.608079] (lslidar_driver) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[5.608652] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[5.609105] (lslidar_driver) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_apps;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[5.610786] (lslidar_driver) StdoutLine: {'line': b'-- Found diagnostic_updater: 4.0.2 (/opt/ros/humble/share/diagnostic_updater/cmake)\n'}
+[5.616158] (-) TimerEvent: {}
+[5.625678] (lslidar_driver) StdoutLine: {'line': b'-- Found lslidar_msgs: 1.2.0 (/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/share/lslidar_msgs/cmake)\n'}
+[5.634157] (lslidar_driver) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[5.649966] (lslidar_driver) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[5.716352] (-) TimerEvent: {}
+[5.747179] (lslidar_driver) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.794608] (lslidar_driver) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:40 (add_executable):\n'}
+[5.794786] (lslidar_driver) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target lslidar_driver_node\n'}
+[5.794864] (lslidar_driver) StderrLine: {'line': b'  because files in some directories may conflict with libraries in implicit\n'}
+[5.794935] (lslidar_driver) StderrLine: {'line': b'  directories:\n'}
+[5.795023] (lslidar_driver) StderrLine: {'line': b'\n'}
+[5.795098] (lslidar_driver) StderrLine: {'line': b'    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[5.795168] (lslidar_driver) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[5.795237] (lslidar_driver) StderrLine: {'line': b'    runtime library [libpng16.so.16] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[5.795306] (lslidar_driver) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[5.795373] (lslidar_driver) StderrLine: {'line': b'    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[5.795441] (lslidar_driver) StderrLine: {'line': b'      /home/bill7/miniconda3/envs/bill/lib\n'}
+[5.795509] (lslidar_driver) StderrLine: {'line': b'\n'}
+[5.795576] (lslidar_driver) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[5.795643] (lslidar_driver) StderrLine: {'line': b'\n'}
+[5.795714] (lslidar_driver) StderrLine: {'line': b'\x1b[0m\n'}
+[5.795895] (lslidar_driver) StdoutLine: {'line': b'-- Generating done\n'}
+[5.802079] (lslidar_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver\n'}
+[5.814494] (lslidar_driver) CommandEnded: {'returncode': 0}
+[5.814874] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'build'}
+[5.814890] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver', '--', '-j16', '-l16'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble')]), 'shell': False}
+[5.816443] (-) TimerEvent: {}
+[5.856512] (lslidar_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver_node.cc.o\x1b[0m\n'}
+[5.856644] (lslidar_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lslidar_driver.cc.o\x1b[0m\n'}
+[5.856823] (lslidar_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/input.cc.o\x1b[0m\n'}
+[5.856852] (lslidar_driver) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_driver_node.dir/src/lsiosr.cpp.o\x1b[0m\n'}
+[5.916691] (-) TimerEvent: {}
+[6.017120] (-) TimerEvent: {}
+[6.117518] (-) TimerEvent: {}
+[6.217947] (-) TimerEvent: {}
+[6.318416] (-) TimerEvent: {}
+[6.418849] (-) TimerEvent: {}
+[6.519297] (-) TimerEvent: {}
+[6.619738] (-) TimerEvent: {}
+[6.720080] (-) TimerEvent: {}
+[6.820514] (-) TimerEvent: {}
+[6.920958] (-) TimerEvent: {}
+[7.021391] (-) TimerEvent: {}
+[7.121831] (-) TimerEvent: {}
+[7.222218] (-) TimerEvent: {}
+[7.322653] (-) TimerEvent: {}
+[7.423096] (-) TimerEvent: {}
+[7.523505] (-) TimerEvent: {}
+[7.623919] (-) TimerEvent: {}
+[7.724357] (-) TimerEvent: {}
+[7.824795] (-) TimerEvent: {}
+[7.925271] (-) TimerEvent: {}
+[8.025704] (-) TimerEvent: {}
+[8.126261] (-) TimerEvent: {}
+[8.226634] (-) TimerEvent: {}
+[8.327011] (-) TimerEvent: {}
+[8.427245] (-) TimerEvent: {}
+[8.527514] (-) TimerEvent: {}
+[8.627850] (-) TimerEvent: {}
+[8.728218] (-) TimerEvent: {}
+[8.828554] (-) TimerEvent: {}
+[8.928892] (-) TimerEvent: {}
+[9.029235] (-) TimerEvent: {}
+[9.129575] (-) TimerEvent: {}
+[9.229945] (-) TimerEvent: {}
+[9.330300] (-) TimerEvent: {}
+[9.430640] (-) TimerEvent: {}
+[9.530987] (-) TimerEvent: {}
+[9.631328] (-) TimerEvent: {}
+[9.731702] (-) TimerEvent: {}
+[9.832067] (-) TimerEvent: {}
+[9.932418] (-) TimerEvent: {}
+[10.032787] (-) TimerEvent: {}
+[10.133154] (-) TimerEvent: {}
+[10.233491] (-) TimerEvent: {}
+[10.333772] (-) TimerEvent: {}
+[10.434106] (-) TimerEvent: {}
+[10.534331] (-) TimerEvent: {}
+[10.634648] (-) TimerEvent: {}
+[10.734985] (-) TimerEvent: {}
+[10.835326] (-) TimerEvent: {}
+[10.935667] (-) TimerEvent: {}
+[11.036014] (-) TimerEvent: {}
+[11.136243] (-) TimerEvent: {}
+[11.236585] (-) TimerEvent: {}
+[11.336930] (-) TimerEvent: {}
+[11.437280] (-) TimerEvent: {}
+[11.537617] (-) TimerEvent: {}
+[11.637955] (-) TimerEvent: {}
+[11.738295] (-) TimerEvent: {}
+[11.838637] (-) TimerEvent: {}
+[11.938988] (-) TimerEvent: {}
+[12.039325] (-) TimerEvent: {}
+[12.139664] (-) TimerEvent: {}
+[12.240010] (-) TimerEvent: {}
+[12.340327] (-) TimerEvent: {}
+[12.440660] (-) TimerEvent: {}
+[12.541007] (-) TimerEvent: {}
+[12.641339] (-) TimerEvent: {}
+[12.741669] (-) TimerEvent: {}
+[12.842012] (-) TimerEvent: {}
+[12.942324] (-) TimerEvent: {}
+[13.042650] (-) TimerEvent: {}
+[13.142989] (-) TimerEvent: {}
+[13.243218] (-) TimerEvent: {}
+[13.343555] (-) TimerEvent: {}
+[13.443916] (-) TimerEvent: {}
+[13.544264] (-) TimerEvent: {}
+[13.644591] (-) TimerEvent: {}
+[13.744913] (-) TimerEvent: {}
+[13.845274] (-) TimerEvent: {}
+[13.945619] (-) TimerEvent: {}
+[14.045934] (-) TimerEvent: {}
+[14.146286] (-) TimerEvent: {}
+[14.246537] (-) TimerEvent: {}
+[14.328649] (lslidar_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lslidar_driver_node\x1b[0m\n'}
+[14.346721] (-) TimerEvent: {}
+[14.447049] (-) TimerEvent: {}
+[14.547398] (-) TimerEvent: {}
+[14.647742] (-) TimerEvent: {}
+[14.748092] (-) TimerEvent: {}
+[14.848448] (-) TimerEvent: {}
+[14.948796] (-) TimerEvent: {}
+[15.049179] (-) TimerEvent: {}
+[15.149537] (-) TimerEvent: {}
+[15.243028] (lslidar_driver) StdoutLine: {'line': b'[100%] Built target lslidar_driver_node\n'}
+[15.249718] (-) TimerEvent: {}
+[15.253822] (lslidar_driver) CommandEnded: {'returncode': 0}
+[15.254371] (lslidar_driver) JobProgress: {'identifier': 'lslidar_driver', 'progress': 'install'}
+[15.254790] (lslidar_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver'], 'cwd': '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(bill)'), ('USER', 'bill7'), ('LC_TIME', 'pt_BR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/bill7'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/bill7/billeagle_ws'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_BR.UTF-8'), ('MANAGERPID', '2095'), ('LC_CTYPE', 'pt_BR.UTF-8'), ('SYSTEMD_EXEC_PID', '2460'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'bill7'), ('JOURNAL_STREAM', '8:21916'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'bill7'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/bill7/miniconda3/envs/bill/bin:/home/bill7/miniconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/bill7:@/tmp/.ICE-unix/2249,unix/bill7:/tmp/.ICE-unix/2249'), ('INVOCATION_ID', '94b35086fdb8449b95341b4fc047bcc2'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_BR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'pt_BR.UTF-8'), ('CONDA_PREFIX_1', '/home/bill7/miniconda3'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.Q00H92'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/bill7/miniconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_BR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:1d05e22a-6e5a-4d2c-816c-4e98c3a24c06'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'bill'), ('LC_MEASUREMENT', 'pt_BR.UTF-8'), ('LC_IDENTIFICATION', 'pt_BR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/bill7/billeagle_ws/lslidar_ws/build/lslidar_driver'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/bill7/miniconda3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/bill7/miniconda3/envs/bill/lib/python3.10/site-packages'), ('LC_NUMERIC', 'pt_BR.UTF-8'), ('CONDA_PREFIX', '/home/bill7/miniconda3/envs/bill'), ('LC_PAPER', 'pt_BR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_msgs:/opt/ros/humble')]), 'shell': False}
+[15.260458] (lslidar_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.260622] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/launch\n'}
+[15.260705] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/launch/lslidar_launch.py\n'}
+[15.260781] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params\n'}
+[15.260860] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_1.yaml\n'}
+[15.260963] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10_2.yaml\n'}
+[15.261209] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/params/lsx10.yaml\n'}
+[15.261291] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/rviz\n'}
+[15.261375] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/rviz/lslidar.rviz\n'}
+[15.261449] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node\n'}
+[15.263075] (lslidar_driver) StdoutLine: {'line': b'-- Set runtime path of "/home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/lib/lslidar_driver/lslidar_driver_node" to ""\n'}
+[15.263257] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/package_run_dependencies/lslidar_driver\n'}
+[15.263345] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/parent_prefix_path/lslidar_driver\n'}
+[15.263464] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.sh\n'}
+[15.263544] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/ament_prefix_path.dsv\n'}
+[15.263624] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/path.sh\n'}
+[15.263703] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/environment/path.dsv\n'}
+[15.263781] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.bash\n'}
+[15.263858] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.sh\n'}
+[15.263980] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.zsh\n'}
+[15.264069] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/local_setup.dsv\n'}
+[15.264146] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/package.dsv\n'}
+[15.264217] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/ament_index/resource_index/packages/lslidar_driver\n'}
+[15.264290] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[15.264363] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[15.264470] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig.cmake\n'}
+[15.264605] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/cmake/lslidar_driverConfig-version.cmake\n'}
+[15.264685] (lslidar_driver) StdoutLine: {'line': b'-- Installing: /home/bill7/billeagle_ws/lslidar_ws/install/lslidar_driver/share/lslidar_driver/package.xml\n'}
+[15.265228] (lslidar_driver) CommandEnded: {'returncode': 0}
+[15.271220] (lslidar_driver) JobEnded: {'identifier': 'lslidar_driver', 'rc': 0}
+[15.271668] (-) EventReactorShutdown: {}

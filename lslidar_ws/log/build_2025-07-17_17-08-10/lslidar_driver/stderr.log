@@ -1,0 +1,16 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[33mCMake Warning at CMakeLists.txt:40 (add_executable):
+  Cannot generate a safe runtime search path for target lslidar_driver_node
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpython3.10.so.1.0] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/bill7/miniconda3/envs/bill/lib
+    runtime library [libpng16.so.16] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/bill7/miniconda3/envs/bill/lib
+    runtime library [libz.so.1] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /home/bill7/miniconda3/envs/bill/lib
+
+  Some of these libraries may not be found correctly.
+
+[0m

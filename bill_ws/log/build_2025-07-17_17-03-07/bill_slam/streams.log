@@ -1,0 +1,71 @@
+[0.010s] Invoking command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake /home/bill7/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/bill_ws/install/bill_slam
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.146s] -- The CXX compiler identification is GNU 11.4.0
+[0.151s] -- Detecting C compiler ABI info
+[0.210s] -- Detecting C compiler ABI info - done
+[0.218s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.218s] -- Detecting C compile features
+[0.219s] -- Detecting C compile features - done
+[0.222s] -- Detecting CXX compiler ABI info
+[0.280s] -- Detecting CXX compiler ABI info - done
+[0.284s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.284s] -- Detecting CXX compile features
+[0.285s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.567s] -- Found Python3: /home/bill7/miniconda3/envs/bill/bin/python3 (found version "3.10.18") found components: Interpreter 
+[0.636s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.704s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.704s] -- Added test 'lint_cmake' to check CMake code style
+[0.705s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.705s] -- Added test 'xmllint' to check XML markup files
+[0.706s] -- Configuring done
+[0.707s] -- Generating done
+[0.708s] -- Build files have been written to: /home/bill7/billeagle_ws/bill_ws/build/bill_slam
+[0.712s] Invoked command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake /home/bill7/billeagle_ws/bill_ws/src/bill_slam -DCMAKE_INSTALL_PREFIX=/home/bill7/billeagle_ws/bill_ws/install/bill_slam
+[0.714s] Invoking command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --build /home/bill7/billeagle_ws/bill_ws/build/bill_slam -- -j16 -l16
+[0.754s] Invoked command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --build /home/bill7/billeagle_ws/bill_ws/build/bill_slam -- -j16 -l16
+[0.755s] Invoking command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --install /home/bill7/billeagle_ws/bill_ws/build/bill_slam
+[0.763s] -- Install configuration: ""
+[0.763s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config
+[0.763s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config/amcl.config.yaml
+[0.764s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/config/slam_toolbox_params.yaml
+[0.764s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch
+[0.764s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch/amcl.launch.py
+[0.765s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/launch/mapping.launch.py
+[0.765s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas
+[0.765s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_save.pgm
+[0.766s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/robocup_serial.data
+[0.767s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/ROBOCUP2025_serial.posegraph
+[0.768s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/finalmente2_robocup_save.yaml
+[0.768s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/ROBOCUP2025_save.yaml
+[0.769s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/ROBOCUP2025_save.pgm
+[0.769s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/robocup_serial.posegraph
+[0.772s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_serial.data
+[0.773s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/finalmente2_robocup_save.pgm
+[0.773s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/finalmente2_robocup_serial.data
+[0.773s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_save.yaml
+[0.773s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_serial.data
+[0.774s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home.yaml
+[0.775s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/robocup_save.yaml
+[0.775s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_athome_serial.posegraph
+[0.816s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/ROBOCUP2025_serial.data
+[0.816s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/robocup_save.pgm
+[0.816s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/finalmente2_robocup_serial.posegraph
+[0.821s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_serial.posegraph
+[0.835s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/mapas/mapa_home_save.pgm
+[0.836s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/package_run_dependencies/bill_slam
+[0.836s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/parent_prefix_path/bill_slam
+[0.836s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/ament_prefix_path.sh
+[0.836s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/ament_prefix_path.dsv
+[0.836s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/path.sh
+[0.837s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/environment/path.dsv
+[0.837s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.bash
+[0.837s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.sh
+[0.837s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.zsh
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/local_setup.dsv
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/package.dsv
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/ament_index/resource_index/packages/bill_slam
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/cmake/bill_slamConfig.cmake
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/cmake/bill_slamConfig-version.cmake
+[0.838s] -- Installing: /home/bill7/billeagle_ws/bill_ws/install/bill_slam/share/bill_slam/package.xml
+[0.842s] Invoked command in '/home/bill7/billeagle_ws/bill_ws/build/bill_slam' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble CONDA_PROMPT_MODIFIER=(bill) /usr/bin/cmake --install /home/bill7/billeagle_ws/bill_ws/build/bill_slam
